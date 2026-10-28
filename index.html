@@ -460,9 +460,12 @@ function renderDepth(d) {
   if (!has) return `<section class="depth"><h3>2027 뎁스차트</h3><p class="empty">포지션별 주전·선발진을 정리하는 중이에요.</p></section>`;
   const col = g => `<div><div class="lbl" style="font-size:12px;font-weight:600;color:var(--muted)">${g.label}</div>${(dp[g.key] || []).map(s =>
     `<div class="slot ${s.status || ""}"><span class="p">${esc(s.pos || "")}</span><span class="n">${s.status === "out" ? "공백 · " : ""}${esc(s.name || "")}${s.note ? `<span class="note">${esc(s.note)}</span>` : ""}</span></div>`).join("") || `<div class="empty">정리 전</div>`}</div>`;
-  return `<section class="depth"><h3>2027 뎁스차트</h3>
+  const srcUrl = safeUrl(dp.source);
+  return `<section class="depth"><div><h3>2027 뎁스차트</h3>
+    <p class="note" style="margin:4px 0 0;font-size:13px;color:var(--rumor);font-weight:600">${esc(dp.basis || "")}${srcUrl ? ` · <a href="${esc(srcUrl)}" target="_blank" rel="noopener">출처</a>` : ""}</p>
+    <p style="margin:2px 0 0;font-size:12px;color:var(--muted)">한 경기 라인업이라 실제 주전과 다를 수 있어요. 스토브리그 이동이 생기면 고쳐요.</p></div>
     <div class="depth-grid">${DEPTH_GROUPS.map(col).join("")}</div>
-    <p class="src" style="font-size:12px;color:var(--muted);margin:0">${esc(dp.basis || "")} · <span style="color:var(--plus);font-weight:600">초록</span> 새로 온 선수 · <span style="color:var(--minus);font-weight:600">빨강</span> 빠져서 비는 자리</p>
+    <p class="src" style="font-size:12px;color:var(--muted);margin:0"><span style="color:var(--plus);font-weight:600">초록</span> 새로 온 선수 · <span style="color:var(--minus);font-weight:600">빨강</span> 빠져서 비는 자리</p>
   </section>`;
 }
 
