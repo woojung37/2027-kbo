@@ -67,10 +67,10 @@
    ],
    "roster": {
     "foreign": [
-     "샘 힐리어드 (외야·타자) · 2026 타점왕 139타점, 44홈런",
+     "샘 힐리어드 (외야·타자) · 타점왕 139타점, 44홈런",
+     "데이비스 대니엘 (투수) · KS 1차전 선발 유력",
      "맷 사우어 (투수)",
-     "케일럽 보쉴리 (투수)",
-     "스기모토 코우키 (아시아쿼터 투수) · 2026 홀드 1위 25홀드"
+     "스기모토 코우키 (아시아쿼터 투수) · 홀드 1위 25홀드"
     ],
     "fa": [
      "김민수",
@@ -89,7 +89,87 @@
    },
    "rumors": [],
    "updatedAt": "2026-10-28",
-   "outlook": {}
+   "outlook": {},
+   "depth": {
+    "basis": "2026 정규시즌 최종전 선발 라인업 기준 (재경일보 10/12)",
+    "source": "https://news.jkn.co.kr/post/1019126",
+    "lineup": [
+     {
+      "pos": "RF",
+      "name": "최원준",
+      "note": "208안타"
+     },
+     {
+      "pos": "2B",
+      "name": "류현인",
+      "note": ""
+     },
+     {
+      "pos": "DH",
+      "name": "안현민",
+      "note": ""
+     },
+     {
+      "pos": "LF",
+      "name": "샘 힐리어드",
+      "note": "타점왕"
+     },
+     {
+      "pos": "1B",
+      "name": "김현수",
+      "note": ""
+     },
+     {
+      "pos": "3B",
+      "name": "허경민",
+      "note": ""
+     },
+     {
+      "pos": "CF",
+      "name": "배정대",
+      "note": "FA 예정"
+     },
+     {
+      "pos": "C",
+      "name": "조대현",
+      "note": ""
+     },
+     {
+      "pos": "SS",
+      "name": "장준원",
+      "note": ""
+     }
+    ],
+    "rotation": [
+     {
+      "pos": "SP",
+      "name": "데이비스 대니엘",
+      "note": "KS 1차전 유력"
+     },
+     {
+      "pos": "SP",
+      "name": "고영표",
+      "note": "15승"
+     },
+     {
+      "pos": "SP",
+      "name": "소형준",
+      "note": "승률왕"
+     },
+     {
+      "pos": "SP",
+      "name": "맷 사우어",
+      "note": ""
+     }
+    ],
+    "bullpen": [
+     {
+      "pos": "RP",
+      "name": "스기모토 코우키",
+      "note": "홀드 1위"
+     }
+    ]
+   }
   },
   "samsung": {
    "season2026": "2026 정규시즌 2위 (83승 3무 58패) · 플레이오프 KIA와 1승 1패 (3차전 10/29 광주)",
@@ -145,7 +225,8 @@
    ],
    "roster": {
     "foreign": [
-     "아리엘 후라도 (투수) · PO 2차전 승리 이끈 에이스",
+     "아리엘 후라도 (투수) · PO 2차전 승리",
+     "크리스 페덱 (투수)",
      "르윈 디아즈 (1루수·타자)"
     ],
     "fa": [
@@ -162,7 +243,87 @@
    },
    "rumors": [],
    "updatedAt": "2026-10-28",
-   "outlook": {}
+   "outlook": {},
+   "depth": {
+    "basis": "2026 PO 2차전 선발 라인업 기준 (마이데일리 10/27)",
+    "source": "https://www.mydaily.co.kr/page/view/2026102715444225175",
+    "lineup": [
+     {
+      "pos": "CF",
+      "name": "김지찬",
+      "note": ""
+     },
+     {
+      "pos": "RF",
+      "name": "박승규",
+      "note": ""
+     },
+     {
+      "pos": "DH",
+      "name": "구자욱",
+      "note": "FA 예정 · 타격왕"
+     },
+     {
+      "pos": "1B",
+      "name": "르윈 디아즈",
+      "note": ""
+     },
+     {
+      "pos": "LF",
+      "name": "최형우",
+      "note": ""
+     },
+     {
+      "pos": "3B",
+      "name": "김영웅",
+      "note": ""
+     },
+     {
+      "pos": "C",
+      "name": "강민호",
+      "note": ""
+     },
+     {
+      "pos": "2B",
+      "name": "류지혁",
+      "note": ""
+     },
+     {
+      "pos": "SS",
+      "name": "이재현",
+      "note": ""
+     }
+    ],
+    "rotation": [
+     {
+      "pos": "SP",
+      "name": "아리엘 후라도",
+      "note": "PO2 승리"
+     },
+     {
+      "pos": "SP",
+      "name": "크리스 페덱",
+      "note": "PO1 선발"
+     },
+     {
+      "pos": "SP",
+      "name": "원태인",
+      "note": "FA 예정"
+     },
+     {
+      "pos": "SP",
+      "name": "최원태",
+      "note": "PO3 선발 예정"
+     }
+    ],
+    "bullpen": [
+     {
+      "pos": "CL",
+      "name": "김재윤",
+      "note": "35세이브"
+     }
+    ]
+   }
   },
   "kia": {
    "season2026": "2026 정규시즌 3위 (79승 2무 63패) · 준PO에서 LG 3-0 · 플레이오프 삼성과 1승 1패",
@@ -219,7 +380,8 @@
    "roster": {
     "foreign": [
      "제임스 네일 (투수)",
-     "아담 올러 (투수)"
+     "아담 올러 (투수)",
+     "해럴드 카스트로 (1루수·타자)"
     ],
     "fa": [
      "김호령",
@@ -233,7 +395,71 @@
    },
    "rumors": [],
    "updatedAt": "2026-10-28",
-   "outlook": {}
+   "outlook": {},
+   "depth": {
+    "basis": "2026 PO 2차전 선발 라인업 기준 (마이데일리 10/27)",
+    "source": "https://www.mydaily.co.kr/page/view/2026102716491405384",
+    "lineup": [
+     {
+      "pos": "LF",
+      "name": "박재현",
+      "note": ""
+     },
+     {
+      "pos": "DH",
+      "name": "이호연",
+      "note": ""
+     },
+     {
+      "pos": "3B",
+      "name": "김도영",
+      "note": "홈런왕"
+     },
+     {
+      "pos": "1B",
+      "name": "해럴드 카스트로",
+      "note": ""
+     },
+     {
+      "pos": "RF",
+      "name": "나성범",
+      "note": ""
+     },
+     {
+      "pos": "2B",
+      "name": "김선빈",
+      "note": ""
+     },
+     {
+      "pos": "C",
+      "name": "한준수",
+      "note": ""
+     },
+     {
+      "pos": "SS",
+      "name": "하주석",
+      "note": ""
+     },
+     {
+      "pos": "CF",
+      "name": "김호령",
+      "note": "FA 예정"
+     }
+    ],
+    "rotation": [
+     {
+      "pos": "SP",
+      "name": "제임스 네일",
+      "note": "PO1 선발"
+     },
+     {
+      "pos": "SP",
+      "name": "아담 올러",
+      "note": "PO2 선발"
+     }
+    ],
+    "bullpen": []
+   }
   },
   "lg": {
    "season2026": "2026 정규시즌 4위 (78승 1무 65패) · 준PO에서 KIA에 0-3 탈락 (2025 우승팀)",
@@ -647,14 +873,86 @@
      "미치 화이트 (투수)",
      "기예르모 에레디아 (외야·타자)"
     ],
-    "fa": [],
+    "fa": [
+     "최지훈 (첫 FA 자격)",
+     "한유섬 (5년 다년계약 만료)"
+    ],
     "notes": [
      "7월 베니그노 방출 후 아빌라 대체 영입"
     ]
    },
    "rumors": [],
    "updatedAt": "2026-10-28",
-   "outlook": {}
+   "outlook": {},
+   "depth": {
+    "basis": "2026 정규시즌 마지막 홈경기 선발 라인업 기준 (머니투데이 10/9)",
+    "source": "https://www.mt.co.kr/sports/2026/10/09/2026100911013170952",
+    "lineup": [
+     {
+      "pos": "SS",
+      "name": "박성한",
+      "note": ""
+     },
+     {
+      "pos": "CF",
+      "name": "최지훈",
+      "note": "첫 FA 자격"
+     },
+     {
+      "pos": "LF",
+      "name": "기예르모 에레디아",
+      "note": ""
+     },
+     {
+      "pos": "1B",
+      "name": "전의산",
+      "note": ""
+     },
+     {
+      "pos": "3B",
+      "name": "고명준",
+      "note": ""
+     },
+     {
+      "pos": "C",
+      "name": "조형우",
+      "note": ""
+     },
+     {
+      "pos": "DH",
+      "name": "한유섬",
+      "note": "다년계약 만료"
+     },
+     {
+      "pos": "2B",
+      "name": "안상현",
+      "note": ""
+     },
+     {
+      "pos": "RF",
+      "name": "임근우",
+      "note": ""
+     }
+    ],
+    "rotation": [
+     {
+      "pos": "SP",
+      "name": "페드로 아빌라",
+      "note": "재계약"
+     },
+     {
+      "pos": "SP",
+      "name": "미치 화이트",
+      "note": "개막전 선발"
+     },
+     {
+      "pos": "SP",
+      "name": "이로운",
+      "note": ""
+     }
+    ],
+    "bullpen": []
+   }
   },
   "lotte": {
    "season2026": "2026 정규시즌 7위 (64승 3무 77패) · 9년 연속 포스트시즌 탈락",
@@ -794,7 +1092,77 @@
    },
    "rumors": [],
    "updatedAt": "2026-10-28",
-   "outlook": {}
+   "outlook": {},
+   "depth": {
+    "basis": "2026 정규시즌 최종전 선발 라인업 기준 (코리아데일리 10/11)",
+    "source": "https://www.koreadaily.com/article/20261010203050588",
+    "lineup": [
+     {
+      "pos": "DH",
+      "name": "빅터 레이예스",
+      "note": "211안타"
+     },
+     {
+      "pos": "1B",
+      "name": "나승엽",
+      "note": ""
+     },
+     {
+      "pos": "2B",
+      "name": "고승민",
+      "note": ""
+     },
+     {
+      "pos": "3B",
+      "name": "한동희",
+      "note": ""
+     },
+     {
+      "pos": "SS",
+      "name": "전민재",
+      "note": ""
+     },
+     {
+      "pos": "C",
+      "name": "손성빈",
+      "note": ""
+     },
+     {
+      "pos": "CF",
+      "name": "장두성",
+      "note": ""
+     },
+     {
+      "pos": "RF",
+      "name": "윤동희",
+      "note": ""
+     },
+     {
+      "pos": "LF",
+      "name": "조세진",
+      "note": ""
+     }
+    ],
+    "rotation": [
+     {
+      "pos": "SP",
+      "name": "김진욱",
+      "note": "최종전 선발"
+     },
+     {
+      "pos": "SP",
+      "name": "박세웅",
+      "note": ""
+     }
+    ],
+    "bullpen": [
+     {
+      "pos": "CL",
+      "name": "김원중",
+      "note": ""
+     }
+    ]
+   }
   },
   "nc": {
    "season2026": "2026 정규시즌 8위 (64승 2무 78패)",
@@ -863,7 +1231,7 @@
    "roster": {
     "foreign": [
      "라일리 톰슨 (투수)",
-     "맷 데이비슨 (1루수·타자)"
+     "블레인 크림 (지명타자·타자)"
     ],
     "fa": [
      "권희동"
@@ -872,7 +1240,71 @@
    },
    "rumors": [],
    "updatedAt": "2026-10-28",
-   "outlook": {}
+   "outlook": {},
+   "depth": {
+    "basis": "2026년 9월 29일 두산전 선발 라인업 기준 (스타뉴스)",
+    "source": "https://www.starnewskorea.com/sports/2026/09/29/2026092915555060245",
+    "lineup": [
+     {
+      "pos": "SS",
+      "name": "김주원",
+      "note": ""
+     },
+     {
+      "pos": "RF",
+      "name": "천재환",
+      "note": ""
+     },
+     {
+      "pos": "2B",
+      "name": "박민우",
+      "note": ""
+     },
+     {
+      "pos": "3B",
+      "name": "김휘집",
+      "note": ""
+     },
+     {
+      "pos": "DH",
+      "name": "블레인 크림",
+      "note": ""
+     },
+     {
+      "pos": "C",
+      "name": "김형준",
+      "note": ""
+     },
+     {
+      "pos": "LF",
+      "name": "권희동",
+      "note": "FA 예정"
+     },
+     {
+      "pos": "1B",
+      "name": "신재인",
+      "note": ""
+     },
+     {
+      "pos": "CF",
+      "name": "오태양",
+      "note": ""
+     }
+    ],
+    "rotation": [
+     {
+      "pos": "SP",
+      "name": "구창모",
+      "note": "개막전 선발"
+     },
+     {
+      "pos": "SP",
+      "name": "이재학",
+      "note": ""
+     }
+    ],
+    "bullpen": []
+   }
   },
   "hanwha": {
    "season2026": "2026 정규시즌 9위 (57승 4무 83패) · 2025 준우승에서 급락",
@@ -999,8 +1431,9 @@
    ],
    "roster": {
     "foreign": [
-     "왕옌청 (아시아쿼터 투수) · 재계약 확정",
-     "외국인 선발 2명 공백 (폰세·와이스 이탈 후 과제)"
+     "윌켈 에르난데스 (투수)",
+     "요나단 페라자 (외야·타자)",
+     "왕옌청 (아시아쿼터 투수) · 재계약 확정"
     ],
     "fa": [
      "최재훈",
@@ -1012,7 +1445,76 @@
     ]
    },
    "updatedAt": "2026-10-28",
-   "outlook": {}
+   "outlook": {},
+   "depth": {
+    "basis": "2026 정규시즌 최종전 선발 라인업 기준 (SPOTV 10/10)",
+    "source": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1012296",
+    "lineup": [
+     {
+      "pos": "CF",
+      "name": "최인호",
+      "note": ""
+     },
+     {
+      "pos": "2B",
+      "name": "이도윤",
+      "note": ""
+     },
+     {
+      "pos": "LF",
+      "name": "문현빈",
+      "note": ""
+     },
+     {
+      "pos": "DH",
+      "name": "강백호",
+      "note": ""
+     },
+     {
+      "pos": "3B",
+      "name": "노시환",
+      "note": ""
+     },
+     {
+      "pos": "RF",
+      "name": "요나단 페라자",
+      "note": ""
+     },
+     {
+      "pos": "1B",
+      "name": "김태연",
+      "note": ""
+     },
+     {
+      "pos": "C",
+      "name": "최재훈",
+      "note": "FA 예정"
+     },
+     {
+      "pos": "SS",
+      "name": "심우준",
+      "note": ""
+     }
+    ],
+    "rotation": [
+     {
+      "pos": "SP",
+      "name": "윌켈 에르난데스",
+      "note": "개막전 선발"
+     },
+     {
+      "pos": "SP",
+      "name": "황준서",
+      "note": "최종전 선발"
+     },
+     {
+      "pos": "SP",
+      "name": "왕옌청",
+      "note": "아시아쿼터 재계약"
+     }
+    ],
+    "bullpen": []
+   }
   },
   "kiwoom": {
    "season2026": "2026 정규시즌 10위 (50승 4무 90패) · 4년 연속 최하위",
@@ -1080,14 +1582,79 @@
    ],
    "roster": {
     "foreign": [
-     "라울 알칸타라 (투수) · 재계약 합의"
+     "라울 알칸타라 (투수) · 재계약 합의",
+     "케스턴 히우라 (내야·타자)"
     ],
     "fa": [],
     "notes": []
    },
    "rumors": [],
    "updatedAt": "2026-10-28",
-   "outlook": {}
+   "outlook": {},
+   "depth": {
+    "basis": "2026년 6월 12일 한화전 선발 라인업 기준 (마이데일리, 시즌 중반)",
+    "source": "https://www.mydaily.co.kr/page/view/2026061214545357948",
+    "lineup": [
+     {
+      "pos": "2B",
+      "name": "서건창",
+      "note": ""
+     },
+     {
+      "pos": "DH",
+      "name": "케스턴 히우라",
+      "note": ""
+     },
+     {
+      "pos": "3B",
+      "name": "김웅빈",
+      "note": ""
+     },
+     {
+      "pos": "1B",
+      "name": "최주환",
+      "note": ""
+     },
+     {
+      "pos": "RF",
+      "name": "박찬혁",
+      "note": ""
+     },
+     {
+      "pos": "C",
+      "name": "김건희",
+      "note": ""
+     },
+     {
+      "pos": "SS",
+      "name": "권혁빈",
+      "note": ""
+     },
+     {
+      "pos": "LF",
+      "name": "임지열",
+      "note": ""
+     },
+     {
+      "pos": "CF",
+      "name": "박수종",
+      "note": ""
+     }
+    ],
+    "rotation": [
+     {
+      "pos": "SP",
+      "name": "라울 알칸타라",
+      "note": "재계약 합의"
+     },
+     {
+      "pos": "SP",
+      "name": "안우진",
+      "note": ""
+     }
+    ],
+    "bullpen": []
+   }
   }
  },
  "faSource": {
@@ -1095,7 +1662,7 @@
   "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
  },
  "foreignSource": {
-  "source": "데일리안(1월 기준)",
+  "source": "올해 1월 기사·포스트시즌 라인업",
   "url": "https://www.dailian.co.kr/news/view/1593342/"
  },
  "fa": {
@@ -1289,6 +1856,15 @@
     "status": "공시 전",
     "source": "한국미디어일보(7월 예상)",
     "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "최지훈",
+    "team": "ssg",
+    "pos": "외야수",
+    "grade": "",
+    "status": "공시 전",
+    "source": "머니투데이(10/9)",
+    "url": "https://www.mt.co.kr/sports/2026/10/09/2026100911013170952"
    }
   ]
  },
