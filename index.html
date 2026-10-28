@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2027 KBO 스토브리그</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600;800;900&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: sticky team switcher on top; overview = comparison table + latest moves; team page = 영입/유출 ledger per category, then rumors, then outlook. */
+:root {
+  --bg: #f4f6f5;
+  --surface: #ffffff;
+  --fg: #16201c;
+  --muted: #5b6862;
+  --line: #d9e0dc;
+  --accent: #1d6b4f;
+  --plus: #13804a;
+  --plus-bg: #e3f4ea;
+  --minus: #c2312b;
+  --minus-bg: #fbe7e5;
+  --rumor: #9a6200;
+  --rumor-bg: #fdf3dc;
+  --team: var(--accent);
+  --f-display: "Gothic A1", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --f-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --f-num: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f1513; --surface: #17201c; --fg: #e6ece9; --muted: #95a39c; --line: #2a3530;
+  --accent: #5cc69a; --plus: #5fd18f; --plus-bg: #183a28; --minus: #ff7b72; --minus-bg: #3d1d1b;
+  --rumor: #f0b94a; --rumor-bg: #3a2e14; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0f1513; --surface: #17201c; --fg: #e6ece9; --muted: #95a39c; --line: #2a3530;
+  --accent: #5cc69a; --plus: #5fd18f; --plus-bg: #183a28; --minus: #ff7b72; --minus-bg: #3d1d1b;
+  --rumor: #f0b94a; --rumor-bg: #3a2e14; color-scheme: dark }
+
+html { color-scheme: light; }
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--f-body); font-size: 15px; line-height: 1.55; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+.wrap { max-width: 1080px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.num { font-family: var(--f-num); font-variant-numeric: tabular-nums; }
+
+/* header + team switcher */
+header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-block: 14px 8px; flex-wrap: wrap; }
+.brand h1 { font-size: 20px; font-weight: 900; letter-spacing: -0.01em; }
+.brand h1 span { color: var(--accent); }
+.stamp { font-size: 12px; color: var(--muted); }
+nav.teams { display: flex; gap: 6px; overflow-x: auto; padding-block: 4px 12px; scrollbar-width: thin; }
+nav.teams a { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); color: var(--fg); text-decoration: none; font-size: 13px; font-weight: 600; white-space: nowrap; }
+nav.teams a .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+nav.teams a[aria-current="page"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+
+main { padding-block: 24px 64px; display: grid; gap: 32px; }
+.section-title { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+.section-title h2 { font-size: 18px; font-weight: 800; }
+.section-title p { margin: 0; color: var(--muted); font-size: 13px; }
+
+/* overview table */
+.table-scroll { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+table.board { width: 100%; border-collapse: collapse; min-width: 760px; font-size: 14px; }
+.board th, .board td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: center; white-space: nowrap; }
+.board thead th { font-size: 12px; font-weight: 600; color: var(--muted); letter-spacing: 0.04em; background: var(--surface); }
+.board tbody tr:last-child td, .board tbody tr:last-child th { border-bottom: 0; }
+.board th[scope="row"] { text-align: left; }
+.board th[scope="row"] a { display: inline-flex; align-items: center; gap: 8px; color: var(--fg); text-decoration: none; font-weight: 700; }
+.board th[scope="row"] a:hover { text-decoration: underline; }
+.swatch { width: 4px; height: 20px; border-radius: 2px; background: var(--c); }
+.pm { display: inline-flex; gap: 6px; justify-content: center; }
+.pm .p { color: var(--plus); }
+.pm .m { color: var(--minus); }
+.zero { color: var(--line); }
+.net { font-weight: 600; padding: 2px 8px; border-radius: 6px; }
+.net.up { background: var(--plus-bg); color: var(--plus); }
+.net.down { background: var(--minus-bg); color: var(--minus); }
+.net.even { color: var(--muted); }
+.rumor-count { color: var(--rumor); }
+
+/* feed */
+.feed { list-style: none; margin: 0; padding: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.feed li { display: grid; grid-template-columns: 76px 1fr; gap: 12px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+.feed li:last-child { border-bottom: 0; }
+.feed .date { font-size: 12px; color: var(--muted); padding-top: 2px; }
+.feed .what { min-width: 0; }
+
+/* team page */
+.team-head { display: grid; gap: 14px; padding: 20px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); border-top: 6px solid var(--team); }
+.team-head h2 { font-size: 28px; font-weight: 900; }
+.team-head .sub { color: var(--muted); font-size: 13px; margin: 4px 0 0; }
+.tally { display: flex; gap: 10px; flex-wrap: wrap; }
+.tally .chip { padding: 6px 12px; border-radius: 8px; font-size: 13px; font-weight: 600; }
+.chip.in { background: var(--plus-bg); color: var(--plus); }
+.chip.out { background: var(--minus-bg); color: var(--minus); }
+.chip.rm { background: var(--rumor-bg); color: var(--rumor); }
+
+.cat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.cat > h3 { font-size: 15px; font-weight: 800; padding: 12px 16px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 8px; }
+.cat > h3 small { font-family: var(--f-num); font-weight: 500; font-size: 13px; }
+.ledger { display: grid; grid-template-columns: 1fr 1fr; }
+.ledger > div { min-width: 0; padding: 12px 16px; display: grid; gap: 10px; align-content: start; }
+.ledger > div + div { border-left: 1px solid var(--line); }
+.ledger .col-label { font-size: 12px; font-weight: 600; letter-spacing: 0.04em; }
+.col-in .col-label { color: var(--plus); }
+.col-out .col-label { color: var(--minus); }
+.cats { display: grid; gap: 14px; }
+
+.move { display: grid; grid-template-columns: 22px 1fr; gap: 8px; }
+.move .sign { font-family: var(--f-num); font-weight: 600; font-size: 16px; line-height: 1.4; text-align: center; border-radius: 4px; }
+.col-in .sign { color: var(--plus); background: var(--plus-bg); }
+.col-out .sign { color: var(--minus); background: var(--minus-bg); }
+.move.stay .sign { color: var(--muted); background: var(--bg); }
+.move .body { min-width: 0; }
+.roster { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; display: grid; gap: 14px; }
+.roster h3 { font-size: 15px; font-weight: 800; }
+.roster-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.roster-grid .lbl { font-size: 12px; font-weight: 600; letter-spacing: 0.04em; color: var(--muted); }
+.roster-grid ul { margin: 6px 0 0; padding-left: 18px; font-size: 14px; display: grid; gap: 4px; }
+.roster .src { font-size: 12px; color: var(--muted); margin: 0; }
+@media (max-width: 760px) { .roster-grid { grid-template-columns: 1fr; } }
+.move .name { font-weight: 600; }
+.move .pos { color: var(--muted); font-size: 13px; margin-left: 4px; }
+.move .detail { font-size: 13px; color: var(--fg); margin: 2px 0 0; overflow-wrap: anywhere; }
+.move .meta { font-size: 12px; color: var(--muted); margin-top: 2px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.status { font-size: 11px; font-weight: 600; padding: 1px 6px; border-radius: 4px; border: 1px solid currentColor; }
+.status.done { color: var(--accent); }
+.status.likely { color: var(--muted); }
+.empty { color: var(--muted); font-size: 13px; }
+
+.rumors { border: 1px dashed var(--rumor); background: var(--rumor-bg); border-radius: 10px; padding: 16px; display: grid; gap: 12px; }
+.rumors h3 { font-size: 15px; font-weight: 800; color: var(--rumor); }
+.rumors .note { font-size: 12px; color: var(--muted); margin: -6px 0 0; }
+.rumor { display: grid; grid-template-columns: auto 1fr; gap: 10px; background: var(--surface); border-radius: 8px; padding: 10px 12px; }
+.rumor .tag { font-size: 11px; font-weight: 600; color: var(--rumor); border: 1px solid var(--rumor); border-radius: 4px; padding: 1px 6px; height: fit-content; white-space: nowrap; }
+.rumor .body { min-width: 0; font-size: 14px; overflow-wrap: anywhere; }
+
+.outlook { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; display: grid; gap: 12px; }
+.outlook h3 { font-size: 15px; font-weight: 800; }
+.outlook p { margin: 0; max-width: 68ch; }
+.sw { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.sw ul { margin: 4px 0 0; padding-left: 18px; font-size: 14px; }
+.sw .lbl { font-size: 12px; font-weight: 600; letter-spacing: 0.04em; }
+.sw .good .lbl { color: var(--plus); }
+.sw .bad .lbl { color: var(--minus); }
+
+.notice { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; color: var(--muted); }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--muted); }
+.legend b { font-family: var(--f-num); }
+
+@media (max-width: 640px) {
+  .ledger { grid-template-columns: 1fr; }
+  .ledger > div + div { border-left: 0; border-top: 1px solid var(--line); }
+  .sw { grid-template-columns: 1fr; }
+  .team-head h2 { font-size: 24px; }
+  .feed li { grid-template-columns: 1fr; gap: 2px; }
+}
+@media (prefers-reduced-motion: no-preference) { nav.teams { scroll-behavior: smooth; } }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <h1>2027 KBO <span>스토브리그</span></h1>
+      <div class="stamp" id="stamp">불러오는 중</div>
+    </div>
+    <nav class="teams" id="nav" aria-label="구단 선택"></nav>
+  </div>
+</header>
+<main class="wrap" id="view"></main>
+
+<script>
+const TEAMS = [
+  { id: "lg", name: "LG 트윈스", c: "#C30452" },
+  { id: "hanwha", name: "한화 이글스", c: "#FF6600" },
+  { id: "ssg", name: "SSG 랜더스", c: "#CE0E2D" },
+  { id: "samsung", name: "삼성 라이온즈", c: "#1F5FB5" },
+  { id: "nc", name: "NC 다이노스", c: "#315288" },
+  { id: "kt", name: "KT 위즈", c: "#5A5A5A" },
+  { id: "lotte", name: "롯데 자이언츠", c: "#2B4C8C" },
+  { id: "kia", name: "KIA 타이거즈", c: "#EA0029" },
+  { id: "doosan", name: "두산 베어스", c: "#4A4A8A" },
+  { id: "kiwoom", name: "키움 히어로즈", c: "#A0263C" },
+];
+const CATS = [
+  { id: "fa", label: "FA" },
+  { id: "foreign", label: "외국인 선수" },
+  { id: "trade", label: "트레이드·영입" },
+  { id: "draft", label: "드래프트·신인" },
+  { id: "exit", label: "방출·은퇴·입대" },
+  { id: "coach", label: "감독·코치" },
+];
+const CAT_LABEL = Object.fromEntries(CATS.map(c => [c.id, c.label]));
+const state = { teams: {}, meta: null, loaded: false, unavailable: false };
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+const safeUrl = u => /^https?:\/\//i.test(u || "") ? u : "";
+const items = t => Array.isArray(t?.items) ? t.items : [];
+const rumors = t => Array.isArray(t?.rumors) ? t.rumors : [];
+const fmtDate = d => d ? String(d).slice(5).replace("-", ".") : "";
+
+function tally(t) {
+  const out = { total: { in: 0, out: 0 } };
+  for (const c of CATS) out[c.id] = { in: 0, out: 0 };
+  for (const it of items(t)) {
+    const b = out[it.cat]; if (!b || it.dir === "stay") continue;
+    const k = it.dir === "out" ? "out" : "in";
+    b[k]++; out.total[k]++;
+  }
+  return out;
+}
+
+function renderNav(route) {
+  const nav = document.getElementById("nav");
+  const links = [`<a href="#overview" ${route === "overview" ? 'aria-current="page"' : ""}>전체 비교</a>`]
+    .concat(TEAMS.map(t => `<a href="#${t.id}" style="--c:${t.c}" ${route === t.id ? 'aria-current="page"' : ""}><span class="dot"></span>${esc(t.name)}</a>`));
+  nav.innerHTML = links.join("");
+  const cur = nav.querySelector('[aria-current="page"]');
+  if (cur) cur.scrollIntoView({ block: "nearest", inline: "nearest" });
+}
+
+function pmCell(b) {
+  if (!b.in && !b.out) return `<span class="zero">·</span>`;
+  return `<span class="pm num">${b.in ? `<span class="p">+${b.in}</span>` : ""}${b.out ? `<span class="m">−${b.out}</span>` : ""}</span>`;
+}
+
+function renderOverview() {
+  const rows = TEAMS.map(t => {
+    const d = state.teams[t.id]; const s = tally(d); const net = s.total.in - s.total.out;
+    const cls = net > 0 ? "up" : net < 0 ? "down" : "even";
+    const r = rumors(d).length;
+    return `<tr>
+      <th scope="row"><a href="#${t.id}" style="--c:${t.c}"><span class="swatch"></span>${esc(t.name)}</a></th>
+      ${CATS.map(c => `<td>${pmCell(s[c.id])}</td>`).join("")}
+      <td><span class="net num ${cls}">${net > 0 ? "+" : net < 0 ? "−" : "±"}${Math.abs(net)}</span></td>
+      <td class="num">${r ? `<span class="rumor-count">${r}</span>` : `<span class="zero">·</span>`}</td>
+    </tr>`;
+  }).join("");
+
+  const feed = [];
+  for (const t of TEAMS) for (const it of items(state.teams[t.id])) feed.push({ t, it });
+  feed.sort((a, b) => String(b.it.date || "").localeCompare(String(a.it.date || "")));
+  const feedHtml = feed.length
+    ? `<ul class="feed">${feed.slice(0, 12).map(({ t, it }) => `
+        <li><div class="date num">${esc(fmtDate(it.date))}</div>
+        <div class="what"><a href="#${t.id}" style="color:var(--fg);font-weight:700;text-decoration:none">${esc(t.name)}</a>
+        <span style="color:${it.dir === "out" ? "var(--minus)" : it.dir === "stay" ? "var(--muted)" : "var(--plus)"};font-weight:600"> ${it.dir === "out" ? "−" : it.dir === "stay" ? "=" : "+"} ${esc(it.name)}</span>
+        <span class="pos">${esc(CAT_LABEL[it.cat] || "")}${it.detail ? " · " + esc(it.detail) : ""}</span></div></li>`).join("")}</ul>`
+    : `<div class="notice">아직 등록된 이동이 없어요. 소식이 확인되는 대로 매일 채워집니다.</div>`;
+
+  return `
+  <section>
+    <div class="section-title"><h2>10개 구단 전력 변화</h2>
+      <div class="legend"><span><b style="color:var(--plus)">+</b> 영입</span><span><b style="color:var(--minus)">−</b> 유출</span><span><b>=</b> 잔류·재계약 (합계 제외)</span><span>방출은 발표 1건 = 1</span><span><b style="color:var(--rumor)">루머</b> 확정 전 소문 (합계 제외)</span></div></div>
+    <div class="table-scroll"><table class="board">
+      <thead><tr><th scope="col" style="text-align:left">구단</th>${CATS.map(c => `<th scope="col">${c.label}</th>`).join("")}<th scope="col">순증감</th><th scope="col">루머</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>
+  </section>
+  <section>
+    <div class="section-title"><h2>최근 이동</h2><p>확정·유력 소식만, 최신순</p></div>
+    ${feedHtml}
+  </section>`;
+}
+
+function moveHtml(it) {
+  const url = safeUrl(it.url);
+  const src = it.source ? (url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(it.source)}</a>` : esc(it.source)) : "";
+  const status = it.status === "유력" ? `<span class="status likely">유력</span>` : `<span class="status done">확정</span>`;
+  return `<div class="move${it.dir === "stay" ? " stay" : ""}"><span class="sign">${it.dir === "out" ? "−" : it.dir === "stay" ? "=" : "+"}</span><div class="body">
+    <div><span class="name">${esc(it.name)}</span>${it.pos ? `<span class="pos">${esc(it.pos)}</span>` : ""}</div>
+    ${it.detail ? `<p class="detail">${esc(it.detail)}</p>` : ""}
+    <div class="meta">${status}${it.date ? `<span class="num">${esc(it.date)}</span>` : ""}${src}</div>
+  </div></div>`;
+}
+
+function renderTeam(team) {
+  const d = state.teams[team.id] || {};
+  const s = tally(d);
+  const rs = rumors(d);
+  const cats = CATS.map(c => {
+    const list = items(d).filter(it => it.cat === c.id);
+    const ins = list.filter(it => it.dir !== "out"), outs = list.filter(it => it.dir === "out");
+    return `<section class="cat"><h3>${c.label}<small>${pmCell(s[c.id])}</small></h3>
+      <div class="ledger">
+        <div class="col-in"><div class="col-label">영입 + · 잔류 =</div>${ins.length ? ins.map(moveHtml).join("") : `<div class="empty">아직 없음</div>`}</div>
+        <div class="col-out"><div class="col-label">유출 −</div>${outs.length ? outs.map(moveHtml).join("") : `<div class="empty">아직 없음</div>`}</div>
+      </div></section>`;
+  }).join("");
+
+  const rumorHtml = `<section class="rumors"><h3>루머 · 미확정</h3>
+    <p class="note">갤러리·엠팍·단독 보도 등 공식 발표 전 소문이에요. 위 집계에는 넣지 않았어요.</p>
+    ${rs.length ? rs.map(r => {
+      const url = safeUrl(r.url);
+      return `<div class="rumor"><span class="tag">${esc(CAT_LABEL[r.cat] || "루머")}</span><div class="body">
+        <div><b>${r.dir === "out" ? "−" : r.dir === "in" ? "+" : ""} ${esc(r.name || "")}</b> ${esc(r.text || "")}</div>
+        <div class="meta" style="font-size:12px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap">${r.date ? `<span class="num">${esc(r.date)}</span>` : ""}${r.source ? (url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(r.source)}</a>` : esc(r.source)) : ""}</div>
+      </div></div>`; }).join("") : `<div class="empty">지금은 도는 루머가 없어요.</div>`}
+  </section>`;
+
+  const o = d.outlook || {};
+  const list = a => Array.isArray(a) && a.length ? `<ul>${a.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : `<div class="empty">정리 전</div>`;
+  const outlookHtml = `<section class="outlook"><h3>2027 시즌 전망</h3>
+    ${o.summary ? `<p>${esc(o.summary)}</p>` : `<p class="empty">스토브리그 이동이 어느 정도 정리되면 전망을 채울게요.</p>`}
+    <div class="sw"><div class="good"><div class="lbl">강점</div>${list(o.strengths)}</div><div class="bad"><div class="lbl">약점</div>${list(o.weaknesses)}</div></div>
+  </section>`;
+
+  const ro = d.roster || {};
+  const li = a => Array.isArray(a) && a.length ? `<ul>${a.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : `<div class="empty" style="margin-top:6px">정리 전</div>`;
+  const fs = state.meta?.foreignSource, fa = state.meta?.faSource;
+  const srcLink = s => s && safeUrl(s.url) ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.source)}</a>` : "";
+  const rosterHtml = `<section class="roster"><h3>로스터 핵심</h3>
+    <div class="roster-grid">
+      <div><div class="lbl">외국인 · 아시아쿼터</div>${li(ro.foreign)}</div>
+      <div><div class="lbl">FA 자격 예정</div>${li(ro.fa)}</div>
+      <div><div class="lbl">2026 시즌 포인트</div>${li(ro.notes)}</div>
+    </div>
+    <p class="src">외국인은 2026 시즌 기준 (${srcLink(fs)} 외), FA 예정자는 시즌 중 예상 명단 (${srcLink(fa)}). KBO의 공식 FA 공시가 나오면 바꿀게요.</p>
+  </section>`;
+
+  return `
+  <section class="team-head" style="--team:${team.c}">
+    <div><h2>${esc(team.name)}</h2><p class="sub">${d.season2026 ? esc(d.season2026) + " · " : ""}${d.updatedAt ? "업데이트 " + esc(d.updatedAt) : "아직 정리 전"}</p></div>
+    <div class="tally"><span class="chip in num">영입 +${s.total.in}</span><span class="chip out num">유출 −${s.total.out}</span><span class="chip rm num">루머 ${rs.length}</span></div>
+  </section>
+  <div class="cats">${cats}</div>
+  ${rumorHtml}
+  ${rosterHtml}
+  ${outlookHtml}`;
+}
+
+function route() {
+  const h = (location.hash || "").slice(1);
+  return TEAMS.some(t => t.id === h) ? h : "overview";
+}
+
+function render() {
+  const r = route();
+  renderNav(r);
+  const view = document.getElementById("view");
+  const stamp = document.getElementById("stamp");
+  if (state.unavailable) stamp.textContent = "데이터를 불러오지 못했어요";
+  else if (!state.loaded) stamp.textContent = "불러오는 중";
+  else stamp.textContent = state.meta?.lastUpdated ? `마지막 업데이트 ${state.meta.lastUpdated}` : "업데이트 대기 중";
+  if (state.unavailable) {
+    view.innerHTML = `<div class="notice">데이터 파일을 불러오지 못했어요. 잠시 뒤 새로고침해 주세요.</div>`;
+    return;
+  }
+  const team = TEAMS.find(t => t.id === r);
+  view.innerHTML = team ? renderTeam(team) : renderOverview();
+  document.title = team ? `${team.name} · 2027 KBO 스토브리그` : "2027 KBO 스토브리그";
+}
+
+window.addEventListener("hashchange", () => { render(); window.scrollTo(0, 0); });
+render();
+
+fetch("data/data.json", { cache: "no-cache" })
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(j => { state.teams = j.teams || {}; state.meta = j; state.loaded = true; render(); })
+  .catch(() => { state.unavailable = true; render(); });
+</script>
+</body>
+</html>
