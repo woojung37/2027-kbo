@@ -427,10 +427,10 @@
      "name": "재계약 불가 16명",
      "pos": "",
      "detail": "투수 정성종·최충연·석상호·박로건·조경민·박성준·전하원·손준이, 야수 이인한·윤수녕·엄장윤·김현도·배인혁·김호범·박지훈·이정민",
-     "date": "2026-10",
-     "status": "유력",
-     "source": "SNS 정리(kbotalk)",
-     "url": "https://www.threads.com/@kbotalk/post/DeL7-xeAfT_"
+     "date": "2026-10-07",
+     "status": "확정",
+     "source": "SPOTV NEWS",
+     "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1011895"
     },
     {
      "cat": "draft",
@@ -453,6 +453,39 @@
      "status": "확정",
      "source": "이투데이",
      "url": "https://www.etoday.co.kr/news/view/2628143"
+    },
+    {
+     "cat": "coach",
+     "dir": "in",
+     "name": "허문회 수석코치",
+     "pos": "수석 겸 타격",
+     "detail": "전 롯데 감독(2020~2021), 경질 5년 만의 복귀. 이동욱 감독과 LG 코치 시절 동료. 세부 조율 중이라 공식 발표 대기",
+     "date": "2026-10-28",
+     "status": "유력",
+     "source": "노컷뉴스",
+     "url": "https://nocutnews.co.kr/news/6598424"
+    },
+    {
+     "cat": "coach",
+     "dir": "stay",
+     "name": "조원우 코치",
+     "pos": "1군 수비",
+     "detail": "전 롯데 감독. 올해 퓨처스에서 1군 수비코치로 이동 예정",
+     "date": "2026-10-28",
+     "status": "유력",
+     "source": "노컷뉴스",
+     "url": "https://nocutnews.co.kr/news/6598424"
+    },
+    {
+     "cat": "coach",
+     "dir": "in",
+     "name": "박승민 퓨처스 감독",
+     "pos": "2군 감독",
+     "detail": "전 한화 투수코치, 최종 선임 절차 남음",
+     "date": "2026-10-28",
+     "status": "유력",
+     "source": "노컷뉴스",
+     "url": "https://nocutnews.co.kr/news/6598424"
     }
    ],
    "roster": {
