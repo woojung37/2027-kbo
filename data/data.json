@@ -13,7 +13,8 @@
      "date": "2026-10-19",
      "status": "확정",
      "source": "머니투데이",
-     "url": "https://www.mt.co.kr/sports/2026/10/20/2026101918275846763"
+     "url": "https://www.mt.co.kr/sports/2026/10/20/2026101918275846763",
+     "impact": 3
     },
     {
      "cat": "exit",
@@ -24,7 +25,8 @@
      "date": "2026-10-22",
      "status": "확정",
      "source": "SPOTV NEWS",
-     "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1014765"
+     "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1014765",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -35,7 +37,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -46,7 +49,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -57,7 +61,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "스토브리그닷넷 전체 명단",
-     "url": "https://stoveleague.net/kbo/draft/2027"
+     "url": "https://stoveleague.net/kbo/draft/2027",
+     "impact": 1
     }
    ],
    "roster": {
@@ -98,7 +103,8 @@
      "date": "2026-10-19",
      "status": "확정",
      "source": "재경일보",
-     "url": "https://news.jkn.co.kr/post/1033837"
+     "url": "https://news.jkn.co.kr/post/1033837",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -109,7 +115,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -120,7 +127,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -131,7 +139,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "스토브리그닷넷 전체 명단",
-     "url": "https://stoveleague.net/kbo/draft/2027"
+     "url": "https://stoveleague.net/kbo/draft/2027",
+     "impact": 1
     }
    ],
    "roster": {
@@ -167,7 +176,8 @@
      "date": "2026-10-23",
      "status": "확정",
      "source": "대동N뉴스",
-     "url": "https://www.ddnnews.kr/news/articleView.html?idxno=24904"
+     "url": "https://www.ddnnews.kr/news/articleView.html?idxno=24904",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -178,7 +188,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -189,7 +200,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -200,7 +212,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "스토브리그닷넷 전체 명단",
-     "url": "https://stoveleague.net/kbo/draft/2027"
+     "url": "https://stoveleague.net/kbo/draft/2027",
+     "impact": 1
     }
    ],
    "roster": {
@@ -234,7 +247,8 @@
      "date": "2026-10-23",
      "status": "확정",
      "source": "엑스포츠뉴스",
-     "url": "https://www.xportsnews.com/article/2210750"
+     "url": "https://www.xportsnews.com/article/2210750",
+     "impact": 2
     },
     {
      "cat": "exit",
@@ -245,7 +259,8 @@
      "date": "2026-10-22",
      "status": "확정",
      "source": "SPOTV NEWS",
-     "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1014882"
+     "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1014882",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -256,7 +271,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -267,7 +283,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -278,14 +295,16 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "스토브리그닷넷 전체 명단",
-     "url": "https://stoveleague.net/kbo/draft/2027"
+     "url": "https://stoveleague.net/kbo/draft/2027",
+     "impact": 1
     }
    ],
    "roster": {
     "foreign": [
      "요니 치리노스 (투수)",
      "앤더스 톨허스트 (투수)",
-     "오스틴 딘 (1루수·타자)"
+     "카를로스 카라스코 (투수) · WC1 선발",
+     "오스틴 딘 (1루수·지명타자)"
     ],
     "fa": [
      "박동원 (주전 포수, 잔류가 최우선 과제)",
@@ -298,7 +317,94 @@
    },
    "rumors": [],
    "updatedAt": "2026-10-28",
-   "outlook": {}
+   "outlook": {},
+   "depth": {
+    "basis": "2026 와일드카드 1차전 선발 라인업 기준 (머니투데이 WC1 라인업(10/14))",
+    "lineup": [
+     {
+      "pos": "RF",
+      "name": "홍창기",
+      "note": "FA 예정",
+      "status": ""
+     },
+     {
+      "pos": "CF",
+      "name": "박해민",
+      "note": "",
+      "status": ""
+     },
+     {
+      "pos": "DH",
+      "name": "오스틴 딘",
+      "note": "",
+      "status": ""
+     },
+     {
+      "pos": "1B",
+      "name": "문정빈",
+      "note": "",
+      "status": ""
+     },
+     {
+      "pos": "3B",
+      "name": "문보경",
+      "note": "",
+      "status": ""
+     },
+     {
+      "pos": "LF",
+      "name": "송찬의",
+      "note": "",
+      "status": ""
+     },
+     {
+      "pos": "SS",
+      "name": "구본혁",
+      "note": "",
+      "status": ""
+     },
+     {
+      "pos": "C",
+      "name": "박동원",
+      "note": "FA 예정",
+      "status": ""
+     },
+     {
+      "pos": "2B",
+      "name": "신민재",
+      "note": "",
+      "status": ""
+     }
+    ],
+    "rotation": [
+     {
+      "pos": "SP",
+      "name": "치리노스",
+      "note": "",
+      "status": ""
+     },
+     {
+      "pos": "SP",
+      "name": "카를로스 카라스코",
+      "note": "WC1 선발",
+      "status": ""
+     },
+     {
+      "pos": "SP",
+      "name": "임찬규",
+      "note": "15승",
+      "status": ""
+     },
+     {
+      "pos": "SP",
+      "name": "톨허스트",
+      "note": "",
+      "status": ""
+     }
+    ],
+    "bullpen": [],
+    "source": "https://www.mt.co.kr/sports/2026/10/14/2026101416274441445"
+   }
   },
   "doosan": {
    "season2026": "2026 정규시즌 5위 (73승 5무 66패) · 와일드카드에서 LG에 패",
@@ -312,7 +418,8 @@
      "date": "2026-10-27",
      "status": "확정",
      "source": "스포츠경향",
-     "url": "https://sports.khan.co.kr/article/202610271055003"
+     "url": "https://sports.khan.co.kr/article/202610271055003",
+     "impact": 1
     },
     {
      "cat": "exit",
@@ -323,7 +430,8 @@
      "date": "2026-10-19",
      "status": "확정",
      "source": "엑스포츠뉴스",
-     "url": "https://www.xportsnews.com/article/2209102"
+     "url": "https://www.xportsnews.com/article/2209102",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -334,7 +442,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -345,7 +454,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -356,12 +466,14 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "스토브리그닷넷 전체 명단",
-     "url": "https://stoveleague.net/kbo/draft/2027"
+     "url": "https://stoveleague.net/kbo/draft/2027",
+     "impact": 1
     }
    ],
    "roster": {
     "foreign": [
      "크리스 플렉센 (투수)",
+     "세베리노 (1루수·타자)",
      "타카다 타쿠토 (아시아쿼터 투수) · 재계약 확정"
     ],
     "fa": [
@@ -375,7 +487,95 @@
    },
    "rumors": [],
    "updatedAt": "2026-10-28",
-   "outlook": {}
+   "outlook": {},
+   "depth": {
+    "basis": "2026 와일드카드 1차전 선발 라인업 기준 (머니투데이 WC1 라인업(10/14))",
+    "lineup": [
+     {
+      "pos": "SS",
+      "name": "박찬호",
+      "note": "",
+      "status": ""
+     },
+     {
+      "pos": "3B",
+      "name": "안재석",
+      "note": "",
+      "status": ""
+     },
+     {
+      "pos": "1B",
+      "name": "세베리노",
+      "note": "",
+      "status": ""
+     },
+     {
+      "pos": "DH",
+      "name": "양의지",
+      "note": "FA 예정",
+      "status": ""
+     },
+     {
+      "pos": "LF",
+      "name": "김민석",
+      "note": "",
+      "status": ""
+     },
+     {
+      "pos": "2B",
+      "name": "강승호",
+      "note": "",
+      "status": ""
+     },
+     {
+      "pos": "CF",
+      "name": "정수빈",
+      "note": "FA 예정",
+      "status": ""
+     },
+     {
+      "pos": "C",
+      "name": "윤준호",
+      "note": "",
+      "status": ""
+     },
+     {
+      "pos": "RF",
+      "name": "조수행",
+      "note": "",
+      "status": ""
+     }
+    ],
+    "rotation": [
+     {
+      "pos": "SP",
+      "name": "곽빈",
+      "note": "WC1 선발",
+      "status": ""
+     },
+     {
+      "pos": "SP",
+      "name": "플렉센",
+      "note": "",
+      "status": ""
+     }
+    ],
+    "bullpen": [
+     {
+      "pos": "RP",
+      "name": "타카다 타쿠토",
+      "note": "재계약",
+      "status": ""
+     },
+     {
+      "pos": "RP",
+      "name": "박치국",
+      "note": "FA 예정",
+      "status": ""
+     }
+    ],
+    "source": "https://www.mt.co.kr/sports/2026/10/14/2026101416274441445"
+   }
   },
   "ssg": {
    "season2026": "2026 정규시즌 6위 (65승 5무 74패)",
@@ -389,7 +589,8 @@
      "date": "2026-10-16",
      "status": "확정",
      "source": "엑스포츠뉴스",
-     "url": "https://www.xportsnews.com/article/2208089"
+     "url": "https://www.xportsnews.com/article/2208089",
+     "impact": 1
     },
     {
      "cat": "exit",
@@ -400,7 +601,8 @@
      "date": "2026-10-10",
      "status": "확정",
      "source": "코리아데일리",
-     "url": "https://www.koreadaily.com/article/20261009221232839"
+     "url": "https://www.koreadaily.com/article/20261009221232839",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -411,7 +613,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -422,7 +625,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -433,7 +637,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "스토브리그닷넷 전체 명단",
-     "url": "https://stoveleague.net/kbo/draft/2027"
+     "url": "https://stoveleague.net/kbo/draft/2027",
+     "impact": 1
     }
    ],
    "roster": {
@@ -463,7 +668,8 @@
      "date": "2026-10-26",
      "status": "확정",
      "source": "머니투데이",
-     "url": "https://www.mt.co.kr/sports/2026/10/26/202610261023770777O"
+     "url": "https://www.mt.co.kr/sports/2026/10/26/202610261023770777O",
+     "impact": 3
     },
     {
      "cat": "coach",
@@ -474,7 +680,8 @@
      "date": "2026-10-26",
      "status": "확정",
      "source": "머니투데이",
-     "url": "https://www.mt.co.kr/sports/2026/10/26/202610261023770777O"
+     "url": "https://www.mt.co.kr/sports/2026/10/26/202610261023770777O",
+     "impact": 3
     },
     {
      "cat": "coach",
@@ -485,7 +692,8 @@
      "date": "2026-10-26",
      "status": "확정",
      "source": "머니투데이",
-     "url": "https://www.mt.co.kr/sports/2026/10/26/202610261023770777O"
+     "url": "https://www.mt.co.kr/sports/2026/10/26/202610261023770777O",
+     "impact": 2
     },
     {
      "cat": "exit",
@@ -496,7 +704,8 @@
      "date": "2026-10-07",
      "status": "확정",
      "source": "SPOTV NEWS",
-     "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1011895"
+     "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1011895",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -507,7 +716,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -518,7 +728,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "coach",
@@ -529,7 +740,8 @@
      "date": "2026-10-28",
      "status": "유력",
      "source": "노컷뉴스",
-     "url": "https://nocutnews.co.kr/news/6598424"
+     "url": "https://nocutnews.co.kr/news/6598424",
+     "impact": 2
     },
     {
      "cat": "coach",
@@ -540,7 +752,8 @@
      "date": "2026-10-28",
      "status": "유력",
      "source": "노컷뉴스",
-     "url": "https://nocutnews.co.kr/news/6598424"
+     "url": "https://nocutnews.co.kr/news/6598424",
+     "impact": 1
     },
     {
      "cat": "coach",
@@ -551,7 +764,8 @@
      "date": "2026-10-28",
      "status": "유력",
      "source": "노컷뉴스",
-     "url": "https://nocutnews.co.kr/news/6598424"
+     "url": "https://nocutnews.co.kr/news/6598424",
+     "impact": 2
     },
     {
      "cat": "draft",
@@ -562,7 +776,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "스토브리그닷넷 전체 명단",
-     "url": "https://stoveleague.net/kbo/draft/2027"
+     "url": "https://stoveleague.net/kbo/draft/2027",
+     "impact": 1
     }
    ],
    "roster": {
@@ -593,7 +808,8 @@
      "date": "2026-10-27",
      "status": "확정",
      "source": "SPOTV NEWS",
-     "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1015947"
+     "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1015947",
+     "impact": 2
     },
     {
      "cat": "coach",
@@ -604,7 +820,8 @@
      "date": "2026-10-23",
      "status": "확정",
      "source": "엑스포츠뉴스",
-     "url": "https://www.xportsnews.com/article/2210750"
+     "url": "https://www.xportsnews.com/article/2210750",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -615,7 +832,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -626,7 +844,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -637,7 +856,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "스토브리그닷넷 전체 명단",
-     "url": "https://stoveleague.net/kbo/draft/2027"
+     "url": "https://stoveleague.net/kbo/draft/2027",
+     "impact": 1
     }
    ],
    "roster": {
@@ -666,7 +886,8 @@
      "date": "2026-10-13",
      "status": "확정",
      "source": "머니투데이",
-     "url": "https://www.mt.co.kr/sports/2026/10/20/2026101918275846763"
+     "url": "https://www.mt.co.kr/sports/2026/10/20/2026101918275846763",
+     "impact": 3
     },
     {
      "cat": "coach",
@@ -677,7 +898,8 @@
      "date": "2026-10-10",
      "status": "확정",
      "source": "머니투데이",
-     "url": "https://www.mt.co.kr/sports/2026/10/20/2026101918275846763"
+     "url": "https://www.mt.co.kr/sports/2026/10/20/2026101918275846763",
+     "impact": 3
     },
     {
      "cat": "coach",
@@ -688,7 +910,8 @@
      "date": "2026-10-23",
      "status": "확정",
      "source": "엑스포츠뉴스",
-     "url": "https://www.xportsnews.com/article/2210750"
+     "url": "https://www.xportsnews.com/article/2210750",
+     "impact": 2
     },
     {
      "cat": "coach",
@@ -699,7 +922,8 @@
      "date": "2026-10-23",
      "status": "확정",
      "source": "엑스포츠뉴스",
-     "url": "https://www.xportsnews.com/article/2210750"
+     "url": "https://www.xportsnews.com/article/2210750",
+     "impact": 1
     },
     {
      "cat": "foreign",
@@ -710,7 +934,8 @@
      "date": "2026-10-13",
      "status": "확정",
      "source": "foxcg 정리",
-     "url": "https://foxcg.com/hanwha-eagles-2027-season-news"
+     "url": "https://foxcg.com/hanwha-eagles-2027-season-news",
+     "impact": 1
     },
     {
      "cat": "exit",
@@ -721,7 +946,8 @@
      "date": "2026-10",
      "status": "유력",
      "source": "SNS 정리(kbotalk)",
-     "url": "https://www.threads.com/@kbotalk/post/DeA-Z6VgZbT"
+     "url": "https://www.threads.com/@kbotalk/post/DeA-Z6VgZbT",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -732,7 +958,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -743,7 +970,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -754,7 +982,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "스토브리그닷넷 전체 명단",
-     "url": "https://stoveleague.net/kbo/draft/2027"
+     "url": "https://stoveleague.net/kbo/draft/2027",
+     "impact": 1
     }
    ],
    "rumors": [
@@ -797,7 +1026,8 @@
      "date": "2026-09-20",
      "status": "확정",
      "source": "머니투데이",
-     "url": "https://www.mt.co.kr/sports/2026/09/20/2026092011541098706"
+     "url": "https://www.mt.co.kr/sports/2026/09/20/2026092011541098706",
+     "impact": 1
     },
     {
      "cat": "exit",
@@ -808,7 +1038,8 @@
      "date": "2026-10-11",
      "status": "확정",
      "source": "코리아데일리",
-     "url": "https://www.koreadaily.com/article/20261010225759387"
+     "url": "https://www.koreadaily.com/article/20261010225759387",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -819,7 +1050,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -830,7 +1062,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "이투데이",
-     "url": "https://www.etoday.co.kr/news/view/2628143"
+     "url": "https://www.etoday.co.kr/news/view/2628143",
+     "impact": 1
     },
     {
      "cat": "draft",
@@ -841,7 +1074,8 @@
      "date": "2026-09-21",
      "status": "확정",
      "source": "스토브리그닷넷 전체 명단",
-     "url": "https://stoveleague.net/kbo/draft/2027"
+     "url": "https://stoveleague.net/kbo/draft/2027",
+     "impact": 1
     }
    ],
    "roster": {
@@ -863,5 +1097,230 @@
  "foreignSource": {
   "source": "데일리안(1월 기준)",
   "url": "https://www.dailian.co.kr/news/view/1593342/"
- }
+ },
+ "fa": {
+  "note": "지금은 7월 기사 기준 예상 명단이에요. KBO 공시(한국시리즈 종료 후)가 나오면 전체 명단·등급으로 바꿔요.",
+  "players": [
+   {
+    "name": "김민수",
+    "team": "kt",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "한승혁",
+    "team": "kt",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "김상수",
+    "team": "kt",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "오윤석",
+    "team": "kt",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "김민혁",
+    "team": "kt",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "배정대",
+    "team": "kt",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "원태인",
+    "team": "samsung",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "구자욱",
+    "team": "samsung",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "전병우",
+    "team": "samsung",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "박세혁",
+    "team": "samsung",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "김호령",
+    "team": "kia",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "김태군",
+    "team": "kia",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "박동원",
+    "team": "lg",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "홍창기",
+    "team": "lg",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "양의지",
+    "team": "doosan",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "정수빈",
+    "team": "doosan",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "박치국",
+    "team": "doosan",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "최재훈",
+    "team": "hanwha",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "박상원",
+    "team": "hanwha",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "권희동",
+    "team": "nc",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   },
+   {
+    "name": "박승욱",
+    "team": "lotte",
+    "pos": "",
+    "grade": "",
+    "status": "공시 전",
+    "source": "한국미디어일보(7월 예상)",
+    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+   }
+  ]
+ },
+ "events": [
+  {
+   "date": "2026-10-29",
+   "label": "플레이오프 3차전",
+   "note": "삼성–KIA, 광주 (1승 1패)"
+  },
+  {
+   "date": "2026-10-31",
+   "label": "이동욱 롯데 감독 취임식"
+  },
+  {
+   "date": "2026-11-02",
+   "label": "한국시리즈 개막",
+   "note": "KT vs PO 승자"
+  },
+  {
+   "date": "2026-11-12",
+   "label": "APBC 개막",
+   "note": "도쿄, 최원호 감독"
+  },
+  {
+   "date": "2026-11-25",
+   "label": "보류선수 명단 제출 마감",
+   "note": "KBO 규약"
+  },
+  {
+   "date": null,
+   "label": "FA 자격 선수 공시",
+   "note": "한국시리즈 종료 후 (작년 11/2)"
+  }
+ ]
 }

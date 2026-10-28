@@ -58,7 +58,7 @@ nav.teams a { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 6p
 nav.teams a .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
 nav.teams a[aria-current="page"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
 
-main { padding-block: 24px 64px; display: grid; gap: 32px; }
+main { padding-block: 24px 64px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; }
 .section-title { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
 .section-title h2 { font-size: 18px; font-weight: 800; }
 .section-title p { margin: 0; color: var(--muted); font-size: 13px; }
@@ -160,6 +160,38 @@ table.board { width: 100%; border-collapse: collapse; min-width: 760px; font-siz
   .team-head h2 { font-size: 24px; }
   .feed li { grid-template-columns: 1fr; gap: 2px; }
 }
+/* countdown */
+.countdown { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 4px; }
+.cd { flex: 0 0 auto; min-width: 150px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; display: grid; gap: 2px; }
+.cd .d { font-family: var(--f-num); font-size: 20px; font-weight: 600; color: var(--accent); }
+.cd .d.past { color: var(--muted); }
+.cd .l { font-size: 13px; font-weight: 600; }
+.cd .w { font-size: 12px; color: var(--muted); }
+/* filters */
+.filters { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+.filters button, .filters select { font: inherit; font-size: 13px; padding: 5px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); cursor: pointer; }
+.filters button[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+/* FA table */
+.fa-table td, .fa-table th { text-align: left; }
+.pill { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.pill.wait { background: var(--bg); color: var(--muted); border: 1px solid var(--line); }
+.pill.stay { background: var(--plus-bg); color: var(--plus); }
+.pill.move { background: var(--minus-bg); color: var(--minus); }
+.pill.done { background: var(--bg); color: var(--fg); border: 1px solid var(--line); }
+.grade { font-family: var(--f-num); font-weight: 600; }
+/* depth chart */
+.depth { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; display: grid; gap: 14px; }
+.depth h3 { font-size: 15px; font-weight: 800; }
+.depth-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.slot { display: grid; grid-template-columns: 44px 1fr; gap: 8px; align-items: baseline; padding: 6px 0; border-bottom: 1px dashed var(--line); font-size: 14px; }
+.slot:last-child { border-bottom: 0; }
+.slot .p { font-family: var(--f-num); font-size: 12px; color: var(--muted); }
+.slot .n { min-width: 0; overflow-wrap: anywhere; }
+.slot.out .n { color: var(--minus); font-weight: 600; }
+.slot.new .n { color: var(--plus); font-weight: 600; }
+.slot .note { color: var(--muted); font-size: 12px; margin-left: 4px; }
+.weight { font-family: var(--f-num); font-size: 11px; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; }
+@media (max-width: 760px) { .depth-grid { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: no-preference) { nav.teams { scroll-behavior: smooth; } }
 </style>
 </head>
@@ -212,18 +244,20 @@ function tally(t) {
   for (const it of items(t)) {
     const b = out[it.cat]; if (!b || it.dir === "stay") continue;
     const k = it.dir === "out" ? "out" : "in";
-    b[k]++; out.total[k]++;
+    const w = Number(it.impact) || 1;
+    b[k] += w; out.total[k] += w;
   }
   return out;
 }
 
 function renderNav(route) {
   const nav = document.getElementById("nav");
-  const links = [`<a href="#overview" ${route === "overview" ? 'aria-current="page"' : ""}>전체 비교</a>`]
+  const cur = r => route === r ? 'aria-current="page"' : "";
+  const links = [`<a href="#overview" ${cur("overview")}>전체 비교</a>`, `<a href="#fa" ${cur("fa")}>FA 트래커</a>`, `<a href="#timeline" ${cur("timeline")}>타임라인</a>`]
     .concat(TEAMS.map(t => `<a href="#${t.id}" style="--c:${t.c}" ${route === t.id ? 'aria-current="page"' : ""}><span class="dot"></span>${esc(t.name)}</a>`));
   nav.innerHTML = links.join("");
-  const cur = nav.querySelector('[aria-current="page"]');
-  if (cur) cur.scrollIntoView({ block: "nearest", inline: "nearest" });
+  const active = nav.querySelector('[aria-current="page"]');
+  if (active) active.scrollIntoView({ block: "nearest", inline: "nearest" });
 }
 
 function pmCell(b) {
@@ -256,9 +290,10 @@ function renderOverview() {
     : `<div class="notice">아직 등록된 이동이 없어요. 소식이 확인되는 대로 매일 채워집니다.</div>`;
 
   return `
+  ${renderCountdown()}
   <section>
     <div class="section-title"><h2>10개 구단 전력 변화</h2>
-      <div class="legend"><span><b style="color:var(--plus)">+</b> 영입</span><span><b style="color:var(--minus)">−</b> 유출</span><span><b>=</b> 잔류·재계약 (합계 제외)</span><span>방출은 발표 1건 = 1</span><span><b style="color:var(--rumor)">루머</b> 확정 전 소문 (합계 제외)</span></div></div>
+      <div class="legend"><span><b style="color:var(--plus)">+</b> 영입</span><span><b style="color:var(--minus)">−</b> 유출</span><span><b>=</b> 잔류·재계약 (합계 제외)</span><span>숫자는 영향도 합 (주전급 3 · 1군 백업 2 · 유망주·2군 1)</span><span><b style="color:var(--rumor)">루머</b> 확정 전 소문 (합계 제외)</span></div></div>
     <div class="table-scroll"><table class="board">
       <thead><tr><th scope="col" style="text-align:left">구단</th>${CATS.map(c => `<th scope="col">${c.label}</th>`).join("")}<th scope="col">순증감</th><th scope="col">루머</th></tr></thead>
       <tbody>${rows}</tbody>
@@ -277,7 +312,7 @@ function moveHtml(it) {
   return `<div class="move${it.dir === "stay" ? " stay" : ""}"><span class="sign">${it.dir === "out" ? "−" : it.dir === "stay" ? "=" : "+"}</span><div class="body">
     <div><span class="name">${esc(it.name)}</span>${it.pos ? `<span class="pos">${esc(it.pos)}</span>` : ""}</div>
     ${it.detail ? `<p class="detail">${esc(it.detail)}</p>` : ""}
-    <div class="meta">${status}${it.date ? `<span class="num">${esc(it.date)}</span>` : ""}${src}</div>
+    <div class="meta">${status}${it.dir !== "stay" ? `<span class="weight" title="영향도">×${Number(it.impact) || 1}</span>` : ""}${it.date ? `<span class="num">${esc(it.date)}</span>` : ""}${src}</div>
   </div></div>`;
 }
 
@@ -331,14 +366,117 @@ function renderTeam(team) {
     <div class="tally"><span class="chip in num">영입 +${s.total.in}</span><span class="chip out num">유출 −${s.total.out}</span><span class="chip rm num">루머 ${rs.length}</span></div>
   </section>
   <div class="cats">${cats}</div>
+  ${renderDepth(d)}
   ${rumorHtml}
   ${rosterHtml}
   ${outlookHtml}`;
 }
 
+const TEAM_BY_ID = Object.fromEntries(TEAMS.map(t => [t.id, t]));
+const teamName = id => TEAM_BY_ID[id]?.name || id || "";
+const todayKST = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
+const daysUntil = d => Math.round((Date.parse(d) - Date.parse(todayKST())) / 864e5);
+
+function renderCountdown() {
+  const ev = (state.meta?.events || []).slice().sort((a, b) => String(a.date || "9999").localeCompare(String(b.date || "9999")));
+  const upcoming = ev.filter(e => !e.date || daysUntil(e.date) >= 0).slice(0, 6);
+  if (!upcoming.length) return "";
+  return `<section><div class="section-title"><h2>다가오는 일정</h2><p>한국 시간 기준</p></div>
+    <div class="countdown">${upcoming.map(e => {
+      const n = e.date ? daysUntil(e.date) : null;
+      const big = n === null ? "미정" : n === 0 ? "오늘" : `D-${n}`;
+      return `<div class="cd"><span class="d">${big}</span><span class="l">${esc(e.label)}</span><span class="w num">${e.date ? esc(e.date) : ""}${e.note ? (e.date ? " · " : "") + esc(e.note) : ""}</span></div>`;
+    }).join("")}</div></section>`;
+}
+
+const FA_STATUS = { "미계약": "wait", "공시 전": "wait", "잔류": "stay", "이적": "move", "은퇴": "done", "미신청": "done" };
+function renderFA() {
+  const fa = state.meta?.fa || { players: [] };
+  const players = (fa.players || []).slice().sort((a, b) => TEAMS.findIndex(t => t.id === a.team) - TEAMS.findIndex(t => t.id === b.team));
+  const counts = {}; for (const p of players) counts[p.status] = (counts[p.status] || 0) + 1;
+  const rows = players.map(p => {
+    const url = safeUrl(p.url);
+    const t = TEAM_BY_ID[p.team];
+    return `<tr>
+      <th scope="row" style="text-align:left">${esc(p.name)}<span class="pos">${esc(p.pos || "")}</span></th>
+      <td><a href="#${esc(p.team)}" style="color:var(--fg);text-decoration:none;display:inline-flex;gap:6px;align-items:center"><span class="swatch" style="--c:${t?.c || "var(--muted)"}"></span>${esc(teamName(p.team))}</a></td>
+      <td class="grade">${esc(p.grade || "–")}</td>
+      <td><span class="pill ${FA_STATUS[p.status] || "wait"}">${esc(p.status || "공시 전")}</span>${p.newTeam ? ` → ${esc(teamName(p.newTeam))}` : ""}</td>
+      <td>${esc(p.contract || "")}</td>
+      <td>${esc(p.comp || "")}</td>
+      <td>${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(p.source || "출처")}</a>` : esc(p.source || "")}</td>
+    </tr>`;
+  }).join("");
+  return `<section>
+    <div class="section-title"><h2>FA 트래커</h2><p>${esc(fa.note || "")}</p></div>
+    <div class="legend" style="margin-bottom:12px">${Object.entries(counts).map(([k, v]) => `<span><span class="pill ${FA_STATUS[k] || "wait"}">${esc(k)}</span> <b class="num">${v}</b></span>`).join("")}</div>
+    ${players.length ? `<div class="table-scroll"><table class="board fa-table">
+      <thead><tr><th scope="col">선수</th><th scope="col">원소속</th><th scope="col">등급</th><th scope="col">상태</th><th scope="col">계약</th><th scope="col">보상</th><th scope="col">출처</th></tr></thead>
+      <tbody>${rows}</tbody></table></div>` : `<div class="notice">KBO가 FA 자격 선수를 공시하면 여기에 전체 명단이 들어와요.</div>`}
+    <p class="stamp" style="margin-top:10px">등급 A·B·C는 KBO 공시 기준. 보상은 이적 시 원소속팀이 받는 선수·보상금이에요.</p>
+  </section>`;
+}
+
+const tlFilter = { team: "all", cat: "all" };
+function renderTimeline() {
+  const all = [];
+  for (const t of TEAMS) {
+    const d = state.teams[t.id];
+    for (const it of items(d)) all.push({ t, it, rumor: false });
+    for (const r of rumors(d)) all.push({ t, it: { ...r, detail: r.text }, rumor: true });
+  }
+  const list = all.filter(x => (tlFilter.team === "all" || x.t.id === tlFilter.team) && (tlFilter.cat === "all" || (tlFilter.cat === "rumor" ? x.rumor : !x.rumor && x.it.cat === tlFilter.cat)))
+    .sort((a, b) => String(b.it.date || "").localeCompare(String(a.it.date || "")));
+  const catBtns = [{ id: "all", label: "전체" }, ...CATS, { id: "rumor", label: "루머" }]
+    .map(c => `<button type="button" data-cat="${c.id}" aria-pressed="${tlFilter.cat === c.id}">${c.label}</button>`).join("");
+  const teamSel = `<select id="tl-team" aria-label="구단"><option value="all">전체 구단</option>${TEAMS.map(t => `<option value="${t.id}" ${tlFilter.team === t.id ? "selected" : ""}>${esc(t.name)}</option>`).join("")}</select>`;
+  let lastDate = null;
+  const rows = list.map(({ t, it, rumor }) => {
+    const sign = rumor ? "?" : it.dir === "out" ? "−" : it.dir === "stay" ? "=" : "+";
+    const col = rumor ? "var(--rumor)" : it.dir === "out" ? "var(--minus)" : it.dir === "stay" ? "var(--muted)" : "var(--plus)";
+    const url = safeUrl(it.url);
+    const head = it.date !== lastDate; lastDate = it.date;
+    return `<li><div class="date num">${head ? esc(fmtDate(it.date)) : ""}</div>
+      <div class="what"><a href="#${t.id}" style="color:var(--fg);font-weight:700;text-decoration:none">${esc(t.name)}</a>
+      <span style="color:${col};font-weight:600"> ${sign} ${esc(it.name)}</span>
+      <span class="pos">${rumor ? "루머" : esc(CAT_LABEL[it.cat] || "")}${it.detail ? " · " + esc(it.detail) : ""}</span>
+      ${url ? ` <a href="${esc(url)}" target="_blank" rel="noopener" style="font-size:12px">${esc(it.source || "출처")}</a>` : ""}</div></li>`;
+  }).join("");
+  return `<section>
+    <div class="section-title"><h2>스토브리그 타임라인</h2><p>${list.length}건 · 최신순</p></div>
+    <div class="filters">${teamSel}${catBtns}</div>
+    ${list.length ? `<ul class="feed">${rows}</ul>` : `<div class="notice">조건에 맞는 소식이 없어요.</div>`}
+  </section>`;
+}
+
+const DEPTH_GROUPS = [
+  { key: "lineup", label: "주전 라인업" },
+  { key: "rotation", label: "선발 로테이션" },
+  { key: "bullpen", label: "필승조·마무리" },
+];
+function renderDepth(d) {
+  const dp = d.depth || {};
+  const has = DEPTH_GROUPS.some(g => (dp[g.key] || []).length);
+  if (!has) return `<section class="depth"><h3>2027 뎁스차트</h3><p class="empty">포지션별 주전·선발진을 정리하는 중이에요.</p></section>`;
+  const col = g => `<div><div class="lbl" style="font-size:12px;font-weight:600;color:var(--muted)">${g.label}</div>${(dp[g.key] || []).map(s =>
+    `<div class="slot ${s.status || ""}"><span class="p">${esc(s.pos || "")}</span><span class="n">${s.status === "out" ? "공백 · " : ""}${esc(s.name || "")}${s.note ? `<span class="note">${esc(s.note)}</span>` : ""}</span></div>`).join("") || `<div class="empty">정리 전</div>`}</div>`;
+  return `<section class="depth"><h3>2027 뎁스차트</h3>
+    <div class="depth-grid">${DEPTH_GROUPS.map(col).join("")}</div>
+    <p class="src" style="font-size:12px;color:var(--muted);margin:0">${esc(dp.basis || "")} · <span style="color:var(--plus);font-weight:600">초록</span> 새로 온 선수 · <span style="color:var(--minus);font-weight:600">빨강</span> 빠져서 비는 자리</p>
+  </section>`;
+}
+
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-cat]"); if (!b) return;
+  tlFilter.cat = b.dataset.cat; render();
+});
+document.addEventListener("change", e => {
+  if (e.target.id === "tl-team") { tlFilter.team = e.target.value; render(); }
+});
+
 function route() {
   const h = (location.hash || "").slice(1);
-  return TEAMS.some(t => t.id === h) ? h : "overview";
+  return TEAMS.some(t => t.id === h) || h === "fa" || h === "timeline" ? h : "overview";
 }
 
 function render() {
@@ -354,8 +492,9 @@ function render() {
     return;
   }
   const team = TEAMS.find(t => t.id === r);
-  view.innerHTML = team ? renderTeam(team) : renderOverview();
-  document.title = team ? `${team.name} · 2027 KBO 스토브리그` : "2027 KBO 스토브리그";
+  view.innerHTML = team ? renderTeam(team) : r === "fa" ? renderFA() : r === "timeline" ? renderTimeline() : renderOverview();
+  const sub = team ? team.name : r === "fa" ? "FA 트래커" : r === "timeline" ? "타임라인" : "";
+  document.title = sub ? `${sub} · 2027 KBO 스토브리그` : "2027 KBO 스토브리그";
 }
 
 window.addEventListener("hashchange", () => { render(); window.scrollTo(0, 0); });
