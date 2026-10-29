@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28",
+  "lastUpdated": "2026-10-29",
   "teams": {
     "kt": {
       "season2026": "2026 정규시즌 1위 (90승 5무 49패) · 한국시리즈 직행",
@@ -1664,42 +1664,42 @@
     }
   },
   "faSource": {
-    "source": "한국미디어일보(7월 예상)",
-    "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+    "source": "서울신문(8/17)·마이데일리(1/7) 등 예상 기사",
+    "url": "https://www.seoul.co.kr/news/plan/phj-Cleaning-time/2026/08/17/20260817500056"
   },
   "foreignSource": {
     "source": "미디어펜(개막 전 명단)·오마이스타(시즌 중 교체, 7/31)",
     "url": "https://star.ohmynews.com/NWS_Web/OhmyStar/at_pg.aspx?CNTN_CD=A0003255532&PAGE_CD=N0002&BLCK_NO=&CMPT_CD=M0147"
   },
   "fa": {
-    "note": "7월 예상 기사 + 최지훈(SSG). 다년계약·FA 미신청으로 실제 공시와 다를 수 있어요. KBO 공시가 나오면 전체 명단·등급으로 바꿔요.",
+    "note": "FA 자격은 신규(최초) FA, 4년 뒤 재자격, 비FA 다년계약이 끝난 선수 모두 해당돼요. 다만 매 시즌 1군 등록 145일 이상을 채운 시즌만 1년으로 쳐서, 계약이 끝나도 자격이 안 될 수 있어요(예: 롯데 유강남은 2024년 등록일수 부족으로 이번 재자격 무산, OSEN 1/13). 아래는 기사에 이름이 나온 예상 명단이고, 한국시리즈 뒤 KBO 공시가 나오면 전체 명단·등급으로 바꿔요.",
     "players": [
       {
         "name": "김민수",
         "team": "kt",
-        "pos": "",
+        "pos": "투수",
         "grade": "",
         "status": "공시 전",
-        "source": "한국미디어일보(7월 예상)",
-        "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+        "source": "서울신문(8/17)",
+        "url": "https://www.seoul.co.kr/news/plan/phj-Cleaning-time/2026/08/17/20260817500056"
       },
       {
         "name": "한승혁",
         "team": "kt",
-        "pos": "",
+        "pos": "투수",
         "grade": "",
         "status": "공시 전",
-        "source": "한국미디어일보(7월 예상)",
-        "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+        "source": "서울신문(8/17)",
+        "url": "https://www.seoul.co.kr/news/plan/phj-Cleaning-time/2026/08/17/20260817500056"
       },
       {
         "name": "김상수",
         "team": "kt",
-        "pos": "",
+        "pos": "내야수",
         "grade": "",
         "status": "공시 전",
-        "source": "한국미디어일보(7월 예상)",
-        "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+        "source": "서울신문(8/17)",
+        "url": "https://www.seoul.co.kr/news/plan/phj-Cleaning-time/2026/08/17/20260817500056"
       },
       {
         "name": "오윤석",
@@ -1713,11 +1713,11 @@
       {
         "name": "김민혁",
         "team": "kt",
-        "pos": "",
+        "pos": "외야수",
         "grade": "",
         "status": "공시 전",
-        "source": "한국미디어일보(7월 예상)",
-        "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+        "source": "서울신문(8/17)",
+        "url": "https://www.seoul.co.kr/news/plan/phj-Cleaning-time/2026/08/17/20260817500056"
       },
       {
         "name": "배정대",
@@ -1731,83 +1731,88 @@
       {
         "name": "원태인",
         "team": "samsung",
-        "pos": "",
+        "pos": "투수",
         "grade": "",
         "status": "공시 전",
-        "source": "한국미디어일보(7월 예상)",
-        "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+        "source": "서울신문(8/17)",
+        "url": "https://www.seoul.co.kr/news/plan/phj-Cleaning-time/2026/08/17/20260817500056"
       },
       {
         "name": "구자욱",
         "team": "samsung",
-        "pos": "",
+        "pos": "외야수",
         "grade": "",
         "status": "공시 전",
-        "source": "한국미디어일보(7월 예상)",
-        "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+        "source": "서울신문(8/17)",
+        "url": "https://www.seoul.co.kr/news/plan/phj-Cleaning-time/2026/08/17/20260817500056",
+        "kind": "비FA 다년계약(5년 120억) 종료"
       },
       {
         "name": "전병우",
         "team": "samsung",
-        "pos": "",
+        "pos": "내야수",
         "grade": "",
         "status": "공시 전",
-        "source": "한국미디어일보(7월 예상)",
-        "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+        "source": "일간스포츠(10/26)",
+        "url": "https://isplus.com/article/view/isp202610260070"
       },
       {
         "name": "박세혁",
         "team": "samsung",
-        "pos": "",
+        "pos": "포수",
         "grade": "",
         "status": "공시 전",
-        "source": "한국미디어일보(7월 예상)",
-        "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+        "source": "서울신문(8/17)",
+        "url": "https://www.seoul.co.kr/news/plan/phj-Cleaning-time/2026/08/17/20260817500056",
+        "kind": "재자격 · 4년 46억 종료"
       },
       {
         "name": "김호령",
         "team": "kia",
-        "pos": "",
+        "pos": "외야수",
         "grade": "",
         "status": "공시 전",
-        "source": "한국미디어일보(7월 예상)",
-        "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+        "source": "서울신문(8/17)",
+        "url": "https://www.seoul.co.kr/news/plan/phj-Cleaning-time/2026/08/17/20260817500056"
       },
       {
         "name": "김태군",
         "team": "kia",
-        "pos": "",
+        "pos": "포수",
         "grade": "",
         "status": "공시 전",
-        "source": "한국미디어일보(7월 예상)",
-        "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+        "source": "마이데일리(1/7)",
+        "url": "https://www.mydaily.co.kr/page/view/2026010704060217039",
+        "kind": "비FA 다년계약(3년 25억) 종료"
       },
       {
         "name": "박동원",
         "team": "lg",
-        "pos": "",
+        "pos": "포수",
         "grade": "",
         "status": "공시 전",
-        "source": "한국미디어일보(7월 예상)",
-        "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+        "source": "마이데일리(1/7)",
+        "url": "https://www.mydaily.co.kr/page/view/2026010704060217039",
+        "kind": "재자격 · 4년 65억 종료"
       },
       {
         "name": "홍창기",
         "team": "lg",
-        "pos": "",
+        "pos": "외야수",
         "grade": "",
         "status": "공시 전",
-        "source": "한국미디어일보(7월 예상)",
-        "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+        "source": "서울신문(8/17)",
+        "url": "https://www.seoul.co.kr/news/plan/phj-Cleaning-time/2026/08/17/20260817500056"
       },
       {
         "name": "양의지",
         "team": "doosan",
-        "pos": "",
+        "pos": "포수",
         "grade": "",
         "status": "공시 전",
-        "source": "한국미디어일보(7월 예상)",
-        "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+        "source": "마이데일리(1/7)",
+        "url": "https://www.mydaily.co.kr/page/view/2026010704060217039",
+        "kind": "재자격 · 4+2년 중 4년 종료, 2년은 선수 옵션"
       },
       {
         "name": "정수빈",
@@ -1821,29 +1826,30 @@
       {
         "name": "박치국",
         "team": "doosan",
-        "pos": "",
+        "pos": "투수",
         "grade": "",
         "status": "공시 전",
-        "source": "한국미디어일보(7월 예상)",
-        "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+        "source": "서울신문(8/17)",
+        "url": "https://www.seoul.co.kr/news/plan/phj-Cleaning-time/2026/08/17/20260817500056"
       },
       {
         "name": "최재훈",
         "team": "hanwha",
-        "pos": "",
+        "pos": "포수",
         "grade": "",
         "status": "공시 전",
-        "source": "한국미디어일보(7월 예상)",
-        "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+        "source": "마이데일리(1/7)",
+        "url": "https://www.mydaily.co.kr/page/view/2026010704060217039",
+        "kind": "재자격 · 5년 54억 종료"
       },
       {
         "name": "박상원",
         "team": "hanwha",
-        "pos": "",
+        "pos": "투수",
         "grade": "",
         "status": "공시 전",
-        "source": "한국미디어일보(7월 예상)",
-        "url": "https://www.koreamedia.net/news/view.asp?idx=22973&msection=5&ssection=43"
+        "source": "서울신문(8/17)",
+        "url": "https://www.seoul.co.kr/news/plan/phj-Cleaning-time/2026/08/17/20260817500056"
       },
       {
         "name": "권희동",
@@ -1871,6 +1877,44 @@
         "status": "공시 전",
         "source": "머니투데이(10/9)",
         "url": "https://www.mt.co.kr/sports/2026/10/09/2026100911013170952"
+      },
+      {
+        "name": "문승원",
+        "team": "ssg",
+        "pos": "투수",
+        "kind": "비FA 다년계약 종료",
+        "source": "서울신문(8/17)",
+        "url": "https://www.seoul.co.kr/news/plan/phj-Cleaning-time/2026/08/17/20260817500056",
+        "grade": "",
+        "status": "공시 전"
+      },
+      {
+        "name": "서진용",
+        "team": "ssg",
+        "pos": "투수",
+        "source": "서울신문(8/17)",
+        "url": "https://www.seoul.co.kr/news/plan/phj-Cleaning-time/2026/08/17/20260817500056",
+        "grade": "",
+        "status": "공시 전"
+      },
+      {
+        "name": "오태곤",
+        "team": "ssg",
+        "pos": "내야수",
+        "source": "서울신문(8/17)",
+        "url": "https://www.seoul.co.kr/news/plan/phj-Cleaning-time/2026/08/17/20260817500056",
+        "grade": "",
+        "status": "공시 전"
+      },
+      {
+        "name": "박종훈",
+        "team": "ssg",
+        "pos": "투수",
+        "kind": "비FA 다년계약(5년 65억) 마지막 해 · 등록일수 충족 여부 미확인",
+        "source": "SPOTV NEWS(4/13)",
+        "url": "https://v.daum.net/v/20260413230124473",
+        "grade": "",
+        "status": "공시 전"
       }
     ]
   },

@@ -125,7 +125,8 @@ table.board { width: 100%; border-collapse: collapse; min-width: 760px; font-siz
 .roster .src { font-size: 12px; color: var(--muted); margin: 0; }
 @media (max-width: 760px) { .roster-grid { grid-template-columns: 1fr; } }
 .move .name { font-weight: 600; }
-.move .pos { color: var(--muted); font-size: 13px; margin-left: 4px; }
+.move .pos, .fa-table .pos { color: var(--muted); font-size: 13px; margin-left: 4px; }
+.fa-table .kind { display: block; color: var(--muted); font-size: 12px; font-weight: 400; margin-top: 2px; }
 .move .detail { font-size: 13px; color: var(--fg); margin: 2px 0 0; overflow-wrap: anywhere; }
 .move .meta { font-size: 12px; color: var(--muted); margin-top: 2px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .status { font-size: 11px; font-weight: 600; padding: 1px 6px; border-radius: 4px; border: 1px solid currentColor; }
@@ -398,7 +399,7 @@ function renderFA() {
     const url = safeUrl(p.url);
     const t = TEAM_BY_ID[p.team];
     return `<tr>
-      <th scope="row" style="text-align:left">${esc(p.name)}<span class="pos">${esc(p.pos || "")}</span></th>
+      <th scope="row" style="text-align:left">${esc(p.name)}<span class="pos">${esc(p.pos || "")}</span>${p.kind ? `<span class="kind">${esc(p.kind)}</span>` : ""}</th>
       <td><a href="#${esc(p.team)}" style="color:var(--fg);text-decoration:none;display:inline-flex;gap:6px;align-items:center"><span class="swatch" style="--c:${t?.c || "var(--muted)"}"></span>${esc(teamName(p.team))}</a></td>
       <td class="grade">${esc(p.grade || "–")}</td>
       <td><span class="pill ${FA_STATUS[p.status] || "wait"}">${esc(p.status || "공시 전")}</span>${p.newTeam ? ` → ${esc(teamName(p.newTeam))}` : ""}</td>
