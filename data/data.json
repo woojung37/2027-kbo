@@ -1203,6 +1203,90 @@
           "source": "MHN스포츠 (기사 제목)",
           "url": "https://sports.news.nate.com/view/20261029n07351",
           "impact": 2
+        },
+        {
+          "cat": "coach",
+          "dir": "in",
+          "name": "김민성 코치",
+          "pos": "코치",
+          "detail": "2026 은퇴 내야수, 1군 코치(조원우 보좌)",
+          "status": "확정",
+          "date": "2026-11-11",
+          "source": "아시아투데이",
+          "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261111010004357",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "in",
+          "name": "강영식 퓨처스 투수코치",
+          "pos": "코치",
+          "detail": "3년 계약",
+          "status": "확정",
+          "date": "2026-11-11",
+          "source": "아시아투데이",
+          "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261111010004357",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "in",
+          "name": "이정호 코치",
+          "pos": "코치",
+          "detail": "강영식 보좌 (신규/잔류 구분 불명)",
+          "status": "확정",
+          "date": "2026-11-11",
+          "source": "아시아투데이",
+          "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261111010004357",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "in",
+          "name": "채태인 퓨처스 타격코치",
+          "pos": "코치",
+          "detail": "신규/잔류 구분 불명",
+          "status": "확정",
+          "date": "2026-11-11",
+          "source": "아시아투데이",
+          "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261111010004357",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "in",
+          "name": "이승하 퓨처스 코치",
+          "pos": "코치",
+          "detail": "신규/잔류 구분 불명",
+          "status": "확정",
+          "date": "2026-11-11",
+          "source": "아시아투데이",
+          "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261111010004357",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "stay",
+          "name": "문규현 코치",
+          "pos": "코치",
+          "detail": "1군 수비코치에서 퓨처스로 이동",
+          "status": "확정",
+          "date": "2026-11-11",
+          "source": "아시아투데이",
+          "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261111010004357",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "stay",
+          "name": "잔류군 코치진",
+          "pos": "코치",
+          "detail": "진해수·이현곤·김사훈·황진수·이재곤·박정현",
+          "status": "확정",
+          "date": "2026-11-11",
+          "source": "아시아투데이",
+          "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261111010004357",
+          "impact": 1
         }
       ],
       "roster": {
@@ -1221,7 +1305,7 @@
         ]
       },
       "rumors": [],
-      "updatedAt": "2026-11-10",
+      "updatedAt": "2026-11-11",
       "outlook": {},
       "depth": {
         "basis": "2026 정규시즌 최종전 선발 라인업 기준 (코리아데일리 10/11)",
@@ -1760,6 +1844,114 @@
           "source": "엑스포츠뉴스 (키움 지명 명단)",
           "url": "https://www.xportsnews.com/article/2198199",
           "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "stay",
+          "name": "강병식 수석코치",
+          "pos": "코치",
+          "detail": "2027 1군 수석 (감독 설종진)",
+          "status": "확정",
+          "date": "2026-11-11",
+          "source": "뉴스핌",
+          "url": "https://www.newspim.com/news/view/20261111001052",
+          "impact": 2
+        },
+        {
+          "cat": "coach",
+          "dir": "in",
+          "name": "이성열 타격코치",
+          "pos": "코치",
+          "detail": "1군 타격코치 신규 (전 KT)",
+          "status": "확정",
+          "date": "2026-11-11",
+          "source": "뉴스핌",
+          "url": "https://www.newspim.com/news/view/20261111001052",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "in",
+          "name": "이형종 타격보조 플레잉코치",
+          "pos": "코치",
+          "detail": "1군 타격보조 겸 플레잉코치 신규",
+          "status": "확정",
+          "date": "2026-11-11",
+          "source": "뉴스핌",
+          "url": "https://www.newspim.com/news/view/20261111001052",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "stay",
+          "name": "유재신 수비·3루주루·작전코치",
+          "pos": "코치",
+          "detail": "퓨처스에서 1군으로 이동",
+          "status": "확정",
+          "date": "2026-11-11",
+          "source": "뉴스핌",
+          "url": "https://www.newspim.com/news/view/20261111001052",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "stay",
+          "name": "문성현 불펜코치",
+          "pos": "코치",
+          "detail": "1군 불펜코치로 보직 변경",
+          "status": "확정",
+          "date": "2026-11-11",
+          "source": "뉴스핌",
+          "url": "https://www.newspim.com/news/view/20261111001052",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "stay",
+          "name": "박승주 퓨처스 불펜코치",
+          "pos": "코치",
+          "detail": "1군에서 퓨처스로 이동",
+          "status": "확정",
+          "date": "2026-11-11",
+          "source": "뉴스핌",
+          "url": "https://www.newspim.com/news/view/20261111001052",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "stay",
+          "name": "문찬종 퓨처스 코치",
+          "pos": "코치",
+          "detail": "1군에서 퓨처스로 이동",
+          "status": "확정",
+          "date": "2026-11-11",
+          "source": "뉴스핌",
+          "url": "https://www.newspim.com/news/view/20261111001052",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "stay",
+          "name": "박병호 퓨처스 타격총괄·잔류군 총괄",
+          "pos": "코치",
+          "detail": "퓨처스 감독 오윤 체제",
+          "status": "확정",
+          "date": "2026-11-11",
+          "source": "뉴스핌",
+          "url": "https://www.newspim.com/news/view/20261111001052",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "stay",
+          "name": "1군·퓨처스·잔류군 코치진 발표",
+          "pos": "코치",
+          "detail": "김수경 투수총괄, 노병오 투수, 박도현 배터리, 김준완 외야·1루주루 등. 이탈자 기사에 언급 없음",
+          "status": "확정",
+          "date": "2026-11-11",
+          "source": "뉴스핌",
+          "url": "https://www.newspim.com/news/view/20261111001052",
+          "impact": 1
         }
       ],
       "roster": {
@@ -1773,7 +1965,7 @@
         "notes": []
       },
       "rumors": [],
-      "updatedAt": "2026-10-28",
+      "updatedAt": "2026-11-11",
       "outlook": {},
       "depth": {
         "basis": "2026년 6월 12일 한화전 선발 라인업 기준 (마이데일리, 시즌 중반)",
