@@ -605,6 +605,18 @@
           "source": "마이데일리",
           "url": "https://www.mydaily.co.kr/page/view/2026111015414335926",
           "impact": 1
+        },
+        {
+          "cat": "foreign",
+          "dir": "stay",
+          "name": "오스틴 딘",
+          "pos": "타자",
+          "detail": "재계약 1년 200만 달러 (옵션 없음, KBO 외국인 타자 역대 최고 연봉)",
+          "status": "확정",
+          "date": "2026-11-12",
+          "source": "스포츠경향",
+          "url": "https://sports.khan.co.kr/article/202611121011013/",
+          "impact": 3
         }
       ],
       "roster": {
@@ -625,7 +637,7 @@
         ]
       },
       "rumors": [],
-      "updatedAt": "2026-11-10",
+      "updatedAt": "2026-11-12",
       "outlook": {},
       "depth": {
         "basis": "2026 와일드카드 1차전 선발 라인업 기준 (머니투데이 WC1 라인업(10/14))",
