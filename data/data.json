@@ -943,6 +943,114 @@
           "source": "머니투데이 (10/7 SSG 신인 11명 계약)",
           "url": "https://www.mt.co.kr/sports/2026/10/07/2026100712295984479",
           "impact": 1
+        },
+        {
+          "cat": "exit",
+          "dir": "out",
+          "name": "김민식",
+          "pos": "포수",
+          "detail": "방출 (2026 1군 14경기 타율 .143). 현역 계속 의사, 백업 포수 필요 구단 영입 가능",
+          "status": "확정",
+          "date": "2026-11-12",
+          "source": "SPOTV뉴스",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1019340",
+          "impact": 1
+        },
+        {
+          "cat": "exit",
+          "dir": "out",
+          "name": "김창평",
+          "pos": "외야수",
+          "detail": "방출",
+          "status": "확정",
+          "date": "2026-11-12",
+          "source": "SPOTV뉴스",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1019340",
+          "impact": 1
+        },
+        {
+          "cat": "exit",
+          "dir": "out",
+          "name": "김태윤",
+          "pos": "야수",
+          "detail": "방출",
+          "status": "확정",
+          "date": "2026-11-12",
+          "source": "SPOTV뉴스",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1019340",
+          "impact": 1
+        },
+        {
+          "cat": "exit",
+          "dir": "out",
+          "name": "류효승",
+          "pos": "야수",
+          "detail": "은퇴",
+          "status": "확정",
+          "date": "2026-11-12",
+          "source": "SPOTV뉴스",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1019340",
+          "impact": 1
+        },
+        {
+          "cat": "exit",
+          "dir": "out",
+          "name": "길지석",
+          "pos": "투수",
+          "detail": "은퇴",
+          "status": "확정",
+          "date": "2026-11-12",
+          "source": "SPOTV뉴스",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1019340",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "out",
+          "name": "나경민 코치",
+          "pos": "코치",
+          "detail": "재계약 불가 통보",
+          "status": "확정",
+          "date": "2026-11-12",
+          "source": "SPOTV뉴스",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1019340",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "out",
+          "name": "류택현 코치",
+          "pos": "코치",
+          "detail": "재계약 불가 통보",
+          "status": "확정",
+          "date": "2026-11-12",
+          "source": "SPOTV뉴스",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1019340",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "out",
+          "name": "이영욱 코치",
+          "pos": "코치",
+          "detail": "재계약 불가 통보",
+          "status": "확정",
+          "date": "2026-11-12",
+          "source": "SPOTV뉴스",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1019340",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "out",
+          "name": "곽현희 코치",
+          "pos": "코치",
+          "detail": "재계약 불가 통보",
+          "status": "확정",
+          "date": "2026-11-12",
+          "source": "SPOTV뉴스",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1019340",
+          "impact": 1
         }
       ],
       "roster": {
@@ -961,7 +1069,7 @@
         ]
       },
       "rumors": [],
-      "updatedAt": "2026-10-28",
+      "updatedAt": "2026-11-12",
       "outlook": {},
       "depth": {
         "basis": "2026 정규시즌 마지막 홈경기 선발 라인업 기준 (머니투데이 10/9)",
