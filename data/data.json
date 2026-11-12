@@ -1814,6 +1814,54 @@
           "source": "뉴스핌",
           "url": "https://www.newspim.com/news/view/20261111000702",
           "impact": 2
+        },
+        {
+          "cat": "coach",
+          "dir": "out",
+          "name": "양승관 수석코치",
+          "pos": "코치",
+          "detail": "재계약 포기 (김경문 감독 체제 수석)",
+          "status": "확정",
+          "date": "2026-10-12",
+          "source": "STN스포츠",
+          "url": "https://www.stnsports.co.kr/news/articleView.html?idxno=323928",
+          "impact": 2
+        },
+        {
+          "cat": "coach",
+          "dir": "out",
+          "name": "양상문 코치",
+          "pos": "코치",
+          "detail": "재계약 포기",
+          "status": "확정",
+          "date": "2026-10-12",
+          "source": "STN스포츠",
+          "url": "https://www.stnsports.co.kr/news/articleView.html?idxno=323928",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "out",
+          "name": "김민호 코치",
+          "pos": "코치",
+          "detail": "재계약 포기",
+          "status": "확정",
+          "date": "2026-10-12",
+          "source": "STN스포츠",
+          "url": "https://www.stnsports.co.kr/news/articleView.html?idxno=323928",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "out",
+          "name": "김재걸 작전·주루코치",
+          "pos": "코치",
+          "detail": "재계약 포기",
+          "status": "확정",
+          "date": "2026-10-12",
+          "source": "STN스포츠",
+          "url": "https://www.stnsports.co.kr/news/articleView.html?idxno=323928",
+          "impact": 1
         }
       ],
       "rumors": [
@@ -1844,7 +1892,7 @@
           "강백호 4년 최대 100억 FA 영입 (2025-11-20, 뉴시스)"
         ]
       },
-      "updatedAt": "2026-11-11",
+      "updatedAt": "2026-11-12",
       "outlook": {},
       "depth": {
         "basis": "2026 정규시즌 최종전 선발 라인업 기준 (SPOTV 10/10)",
