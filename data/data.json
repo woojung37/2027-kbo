@@ -617,6 +617,18 @@
           "source": "스포츠경향",
           "url": "https://sports.khan.co.kr/article/202611121011013/",
           "impact": 3
+        },
+        {
+          "cat": "coach",
+          "dir": "in",
+          "name": "손혁 QC·투수총괄코치",
+          "pos": "코치",
+          "detail": "전 한화 단장, 키움(넥센)·SK 감독·코치 경력. 염경엽 감독과 재회, 이천 1군 가을캠프 합류 (계약 조건 미공개)",
+          "status": "확정",
+          "date": "2026-11-15",
+          "source": "SPOTV뉴스",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1019903",
+          "impact": 2
         }
       ],
       "roster": {
@@ -637,7 +649,7 @@
         ]
       },
       "rumors": [],
-      "updatedAt": "2026-11-12",
+      "updatedAt": "2026-11-15",
       "outlook": {},
       "depth": {
         "basis": "2026 와일드카드 1차전 선발 라인업 기준 (머니투데이 WC1 라인업(10/14))",
