@@ -75,6 +75,18 @@
           "source": "일간스포츠",
           "url": "https://isplus.com/article/view/isp202611100104",
           "impact": 1
+        },
+        {
+          "cat": "foreign",
+          "dir": "out",
+          "name": "스기모토 코우키 (아시아쿼터 투수)",
+          "pos": "투수",
+          "detail": "KT 관계자 확인: 결별. 2026 홀드 1위(25홀드). 소프트뱅크 육성 3순위 지명, 일본行 희망",
+          "status": "확정",
+          "date": "2026-11-16",
+          "source": "엑스포츠뉴스 김근한 (KT 관계자 인용)",
+          "url": "https://www.xportsnews.com/article/2220091",
+          "impact": 2
         }
       ],
       "roster": {
@@ -96,11 +108,31 @@
         "notes": [
           "최원준 208안타 (국내 선수 단일 시즌 최다)",
           "고영표 15승 공동 다승왕",
-          "소형준 승률왕 (.769)"
+          "소형준 승률왕 (.769)",
+          "스기모토 결별 확인(11/16), 아시아쿼터 후보 소프는 미계약"
         ]
       },
-      "rumors": [],
-      "updatedAt": "2026-11-10",
+      "rumors": [
+        {
+          "cat": "foreign",
+          "dir": "in",
+          "name": "루이스 소프 (호주 좌완, 아시아쿼터)",
+          "text": "[단독] 스기모토 대체로 영입 임박. KT 관계자 '긍정적, 막바지 조율 중'이나 계약 미체결. ML 24경기 통산 5.76",
+          "date": "2026-11-16",
+          "source": "엑스포츠뉴스 김근한",
+          "url": "https://www.xportsnews.com/article/2220091"
+        },
+        {
+          "cat": "foreign",
+          "dir": "out",
+          "name": "로건 앨런 (투수)",
+          "text": "결별 '확실시' 보도 (구단 공식 언급은 기사에 없음). 힐리어드·데이비스는 유지 방침으로 보도",
+          "date": "2026-11-16",
+          "source": "엑스포츠뉴스 김근한",
+          "url": "https://www.xportsnews.com/article/2220091"
+        }
+      ],
+      "updatedAt": "2026-11-17",
       "outlook": {},
       "depth": {
         "basis": "2026 정규시즌 최종전 선발 라인업 기준 (재경일보 10/12)",
@@ -272,9 +304,18 @@
           "date": "2026-11-14",
           "source": "엑스포츠뉴스 김근한 기자",
           "url": "https://www.xportsnews.com/journalist/11707"
+        },
+        {
+          "cat": "fa",
+          "dir": "out",
+          "name": "구자욱 (외야수)",
+          "text": "삼성+두산+SSG 3파전 '쟁탈전' 보도 (제목만 확인, 본문 미확인)",
+          "date": "2026-11-17",
+          "source": "엑스포츠뉴스 김근한",
+          "url": "https://www.xportsnews.com/article/2220395"
         }
       ],
-      "updatedAt": "2026-11-16",
+      "updatedAt": "2026-11-17",
       "outlook": {},
       "depth": {
         "basis": "2026 PO 2차전 선발 라인업 기준 (마이데일리 10/27)",
@@ -856,7 +897,17 @@
           "구단 최초 관중 150만 돌파"
         ]
       },
-      "rumors": [],
+      "rumors": [
+        {
+          "cat": "foreign",
+          "dir": "out",
+          "name": "외국인 3명 전원 교체 검토",
+          "text": "구단 관계자 인용: 윈나우 위해 전원 교체 고려, 타자가 최대 고민. 벤자민(2.31 ERA)은 재계약 선택지만 남김. 공식 발표 아님",
+          "date": "2026-11-17",
+          "source": "엑스포츠뉴스 김근한",
+          "url": "https://www.xportsnews.com/article/2220429"
+        }
+      ],
       "updatedAt": "2026-11-17",
       "outlook": {},
       "depth": {
@@ -1170,6 +1221,15 @@
           "date": "2026-11-16",
           "source": "엑스포츠뉴스 김근한 기자 단독",
           "url": "https://www.xportsnews.com/journalist/11707"
+        },
+        {
+          "cat": "fa",
+          "dir": "stay",
+          "name": "최지훈 (외야수)",
+          "text": "세부 조율 단계, 내부 FA 3명 모두 잡을 것이라는 보도 (제목만 확인)",
+          "date": "2026-11-16",
+          "source": "엑스포츠뉴스 김근한",
+          "url": "https://www.xportsnews.com/article/2220019"
         }
       ],
       "updatedAt": "2026-11-17",
