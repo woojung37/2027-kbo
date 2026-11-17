@@ -1128,6 +1128,18 @@
           "source": "스타뉴스",
           "url": "https://www.starnewskorea.com/sports/2026/11/12/2026111214015852053",
           "impact": 3
+        },
+        {
+          "cat": "fa",
+          "dir": "stay",
+          "name": "오태곤",
+          "pos": "1루·외야",
+          "detail": "FA 1호 계약, 재계약 3년 11억 (계약금 2억 + 연봉 7억4천 + 인센티브 1억6천). 2022년 4년 18억에 이어 두 번째 계약",
+          "status": "확정",
+          "date": "2026-11-17",
+          "source": "SPOTV뉴스",
+          "url": "https://spotvnews.co.kr/news/articleView.html?idxno=1020190",
+          "impact": 1
         }
       ],
       "roster": {
@@ -1158,7 +1170,7 @@
           "url": "https://www.xportsnews.com/journalist/11707"
         }
       ],
-      "updatedAt": "2026-11-16",
+      "updatedAt": "2026-11-17",
       "outlook": {},
       "depth": {
         "basis": "2026 정규시즌 마지막 홈경기 선발 라인업 기준 (머니투데이 10/9)",
@@ -2517,10 +2529,12 @@
         "name": "오태곤",
         "team": "ssg",
         "pos": "내야수",
-        "source": "KBO 승인 공시(이투데이 11/16)",
-        "url": "https://www.etoday.co.kr/news/view/2648616",
+        "source": "SPOTV뉴스 (11/17)",
+        "url": "https://spotvnews.co.kr/news/articleView.html?idxno=1020190",
         "grade": "C",
-        "status": "FA 승인"
+        "status": "잔류",
+        "newTeam": "ssg",
+        "contract": "3년 11억 (계약금 2억·연봉 7.4억·인센 1.6억)"
       },
       {
         "name": "박종훈",
@@ -2595,7 +2609,7 @@
     {
       "date": "2026-11-17",
       "label": "FA 승인 선수 전 구단 협상 시작",
-      "note": "협상 시작일 (OSEN·이투데이 기준 \"17일부터\", 개시 시각은 기사에 없음)"
+      "note": "FA 시장 개시, 1호 계약: SSG 오태곤 (스포티비 11/17)"
     },
     {
       "date": "2026-11-25",
