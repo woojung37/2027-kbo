@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-18",
   "teams": {
     "kt": {
       "season2026": "2026 정규시즌 1위 (90승 5무 49패) · 한국시리즈 삼성에 1승 4패 준우승",
@@ -488,9 +488,18 @@
           "date": "2026-11",
           "source": "viewus 정리",
           "url": "https://feed.viewus.co.kr/ai/article/362519/"
+        },
+        {
+          "cat": "fa",
+          "dir": "out",
+          "name": "김호령 (중견수, C등급)",
+          "text": "FA 신청 후 수도권 외 구단이 관심이라는 보도. KIA는 이범호 감독이 잔류 희망, 시장 상황을 보며 협상 (구단 발표 없음)",
+          "date": "2026-11-18",
+          "source": "SPOTV뉴스",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1020497"
         }
       ],
-      "updatedAt": "2026-11-10",
+      "updatedAt": "2026-11-18",
       "outlook": {},
       "depth": {
         "basis": "2026 PO 2차전 선발 라인업 기준 (마이데일리 10/27)",
@@ -1193,6 +1202,18 @@
           "source": "SPOTV뉴스",
           "url": "https://spotvnews.co.kr/news/articleView.html?idxno=1020190",
           "impact": 1
+        },
+        {
+          "cat": "fa",
+          "dir": "stay",
+          "name": "최지훈",
+          "pos": "외야수",
+          "detail": "재계약 4년 67억 (계약금 38억 + 연봉 20억 + 옵션 9억). 첫 FA, B등급, SSG 중견수",
+          "status": "확정",
+          "date": "2026-11-18",
+          "source": "SPOTV뉴스",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1020461",
+          "impact": 3
         }
       ],
       "roster": {
@@ -1209,7 +1230,8 @@
         ],
         "notes": [
           "7월 베니그노 방출 후 아빌라 대체 영입",
-          "미치 화이트는 2026.6.6 웨이버(어깨 부상) → 토마스 해치 영입, 해치는 2027 거취 미확인. 뎁스차트의 화이트는 개막전 기준"
+          "미치 화이트는 2026.6.6 웨이버(어깨 부상) → 토마스 해치 영입, 해치는 2027 거취 미확인. 뎁스차트의 화이트는 개막전 기준",
+          "내부 FA: 오태곤(3년 11억)·최지훈(4년 67억) 재계약, 문승원은 제안 중(미계약), 박종훈·한유섬 5년 계약 만료"
         ]
       },
       "rumors": [
@@ -1221,18 +1243,9 @@
           "date": "2026-11-16",
           "source": "엑스포츠뉴스 김근한 기자 단독",
           "url": "https://www.xportsnews.com/journalist/11707"
-        },
-        {
-          "cat": "fa",
-          "dir": "stay",
-          "name": "최지훈 (외야수)",
-          "text": "세부 조율 단계, 내부 FA 3명 모두 잡을 것이라는 보도 (제목만 확인)",
-          "date": "2026-11-16",
-          "source": "엑스포츠뉴스 김근한",
-          "url": "https://www.xportsnews.com/article/2220019"
         }
       ],
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "outlook": {},
       "depth": {
         "basis": "2026 정규시즌 마지막 홈경기 선발 라인업 기준 (머니투데이 10/9)",
@@ -2566,9 +2579,11 @@
         "team": "ssg",
         "pos": "외야수",
         "grade": "B",
-        "status": "FA 승인",
-        "source": "KBO 승인 공시(이투데이 11/16)",
-        "url": "https://www.etoday.co.kr/news/view/2648616"
+        "status": "잔류",
+        "source": "SPOTV뉴스 (11/18)",
+        "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1020461",
+        "newTeam": "ssg",
+        "contract": "4년 67억 (계약금 38억·연봉 20억·옵션 9억)"
       },
       {
         "name": "문승원",
@@ -2679,6 +2694,11 @@
       "date": "2026-11-25",
       "label": "보류선수 명단 제출 마감",
       "note": "KBO 규약"
+    },
+    {
+      "date": "2026-11-18",
+      "label": "FA 계약 2호 이후",
+      "note": "SSG 최지훈 4년 67억 재계약 (SPOTV 11/18)"
     }
   ]
 }
