@@ -130,9 +130,18 @@
           "date": "2026-11-16",
           "source": "엑스포츠뉴스 김근한",
           "url": "https://www.xportsnews.com/article/2220091"
+        },
+        {
+          "cat": "fa",
+          "dir": "in",
+          "name": "박동원 (포수, LG FA)",
+          "text": "KT행 설이 있었으나 KT 관계자가 '현 시점 외부 FA 검토 안 함, 내부 FA 집중'이라 부인 (11/16 발언)",
+          "date": "2026-11-18",
+          "source": "엑스포츠뉴스 김근한",
+          "url": "https://www.xportsnews.com/article/2220498"
         }
       ],
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "outlook": {},
       "depth": {
         "basis": "2026 정규시즌 최종전 선발 라인업 기준 (재경일보 10/12)",
@@ -313,9 +322,18 @@
           "date": "2026-11-17",
           "source": "엑스포츠뉴스 김근한",
           "url": "https://www.xportsnews.com/article/2220395"
+        },
+        {
+          "cat": "foreign",
+          "dir": "in",
+          "name": "타무라 이치로 (우완, 전 두산 아시아쿼터)",
+          "text": "삼성·롯데 스카우트가 11/17 NPB 트라이아웃에서 직접 지켜봤다는 보도(최고 148km). 구단 확인 없음. 두산이 2026 시즌 중 방출",
+          "date": "2026-11-18",
+          "source": "엑스포츠뉴스 김근한",
+          "url": "https://www.xportsnews.com/article/2220534"
         }
       ],
-      "updatedAt": "2026-11-17",
+      "updatedAt": "2026-11-18",
       "outlook": {},
       "depth": {
         "basis": "2026 PO 2차전 선발 라인업 기준 (마이데일리 10/27)",
@@ -497,6 +515,15 @@
           "date": "2026-11-18",
           "source": "SPOTV뉴스",
           "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1020497"
+        },
+        {
+          "cat": "fa",
+          "dir": "in",
+          "name": "홍창기·전병우 (외부 FA 후보)",
+          "text": "KIA가 내부 FA(김태군·김호령) 잔류와 2번 타자·3루 보강용 외부 FA 영입을 함께 노린다는 분석 보도. 구단 발표 없음",
+          "date": "2026-11-18",
+          "source": "엑스포츠뉴스 김근한",
+          "url": "https://www.xportsnews.com/article/2220517"
         }
       ],
       "updatedAt": "2026-11-18",
@@ -1588,8 +1615,18 @@
           "전민재·고승민 등 8명 미국 드라이브라인 연수"
         ]
       },
-      "rumors": [],
-      "updatedAt": "2026-11-11",
+      "rumors": [
+        {
+          "cat": "foreign",
+          "dir": "in",
+          "name": "타무라 이치로 (우완, 전 두산 아시아쿼터)",
+          "text": "롯데·삼성 스카우트가 NPB 트라이아웃에서 관찰했다는 보도. 구단 확인 없음",
+          "date": "2026-11-18",
+          "source": "엑스포츠뉴스 김근한",
+          "url": "https://www.xportsnews.com/article/2220534"
+        }
+      ],
+      "updatedAt": "2026-11-18",
       "outlook": {},
       "depth": {
         "basis": "2026 정규시즌 최종전 선발 라인업 기준 (코리아데일리 10/11)",
