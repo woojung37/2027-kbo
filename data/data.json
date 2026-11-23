@@ -340,6 +340,15 @@
           "date": "2026-11-20",
           "source": "SPOTV뉴스",
           "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1020950"
+        },
+        {
+          "cat": "foreign",
+          "dir": "out",
+          "name": "크리스 페덱 (투수)",
+          "text": "미국·일본 구단 관심과 일부 제안이 있다는 보도(11/19). 본인은 삼성 잔류 의사. 삼성은 외국인 3명 재계약 방침이나 총액 상한 문제로 확정 아님",
+          "date": "2026-11-19",
+          "source": "더파노라마",
+          "url": "https://www.ftimes.kr/news/articleView.html?idxno=41226"
         }
       ],
       "updatedAt": "2026-11-23",
@@ -764,9 +773,18 @@
           "date": "2026-11-16",
           "source": "문화일보",
           "url": "https://www.munhwa.com/article/11631439"
+        },
+        {
+          "cat": "fa",
+          "dir": "stay",
+          "name": "박동원·홍창기 (LG FA)",
+          "text": "LG가 11/19(시장 3일차) 두 선수와 면담, 금액 제시는 아직 안 함(차명석 단장 '시장에서 무슨 일이 벌어질지 모른다'). 박동원 잔류와 별개로 SSG 방출 김민식 영입 준비 보도",
+          "date": "2026-11-20",
+          "source": "SPOTV뉴스",
+          "url": "https://spotvnews.co.kr/news/articleView.html?idxno=1020938"
         }
       ],
-      "updatedAt": "2026-11-16",
+      "updatedAt": "2026-11-23",
       "outlook": {},
       "depth": {
         "basis": "2026 와일드카드 1차전 선발 라인업 기준 (머니투데이 WC1 라인업(10/14))",
