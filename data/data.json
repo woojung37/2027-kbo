@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-18",
+  "lastUpdated": "2026-11-23",
   "teams": {
     "kt": {
       "season2026": "2026 정규시즌 1위 (90승 5무 49패) · 한국시리즈 삼성에 1승 4패 준우승",
@@ -331,9 +331,18 @@
           "date": "2026-11-18",
           "source": "엑스포츠뉴스 김근한",
           "url": "https://www.xportsnews.com/article/2220534"
+        },
+        {
+          "cat": "fa",
+          "dir": "out",
+          "name": "구자욱 (외야수)",
+          "text": "11/20 MLB 사무국 신분조회 요청, KBO는 '모든 구단과 계약 가능' 통보(공식). 삼성·SSG·두산 관심 보도, 삼성은 잔류 희망. 에이전트는 롱(마코)과 계약했다는 보도",
+          "date": "2026-11-20",
+          "source": "SPOTV뉴스",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1020950"
         }
       ],
-      "updatedAt": "2026-11-18",
+      "updatedAt": "2026-11-23",
       "outlook": {},
       "depth": {
         "basis": "2026 PO 2차전 선발 라인업 기준 (마이데일리 10/27)",
@@ -1241,6 +1250,18 @@
           "source": "SPOTV뉴스",
           "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1020461",
           "impact": 3
+        },
+        {
+          "cat": "fa",
+          "dir": "stay",
+          "name": "문승원",
+          "pos": "투수",
+          "detail": "재계약 2+1년 최대 15억 (계약금 5억·연봉 7.5억·옵션 2.5억). SSG 내부 FA 3명 전원 잔류",
+          "status": "확정",
+          "date": "2026-11-22",
+          "source": "이투데이",
+          "url": "https://www.etoday.co.kr/news/view/2651390",
+          "impact": 2
         }
       ],
       "roster": {
@@ -1258,7 +1279,8 @@
         "notes": [
           "7월 베니그노 방출 후 아빌라 대체 영입",
           "미치 화이트는 2026.6.6 웨이버(어깨 부상) → 토마스 해치 영입, 해치는 2027 거취 미확인. 뎁스차트의 화이트는 개막전 기준",
-          "내부 FA: 오태곤(3년 11억)·최지훈(4년 67억) 재계약, 문승원은 제안 중(미계약), 박종훈·한유섬 5년 계약 만료"
+          "내부 FA: 오태곤(3년 11억)·최지훈(4년 67억) 재계약, 문승원은 제안 중(미계약), 박종훈·한유섬 5년 계약 만료",
+          "내부 FA 전원 잔류(오태곤·최지훈·문승원 총 93억). 구자욱 영입 관심 보도"
         ]
       },
       "rumors": [
@@ -1270,9 +1292,18 @@
           "date": "2026-11-16",
           "source": "엑스포츠뉴스 김근한 기자 단독",
           "url": "https://www.xportsnews.com/journalist/11707"
+        },
+        {
+          "cat": "foreign",
+          "dir": "out",
+          "name": "기예르모 에레디아 (외야·타자)",
+          "text": "결별 방향이라는 보도(30대 후반, 부상). 구단 발표는 없음. 한편 구자욱 영입 관심은 에레디아 문제와 연결된다는 분석",
+          "date": "2026-11-22",
+          "source": "서울신문·시대일보",
+          "url": "https://seoul.co.kr/news/sport/baseball/2026/11/22/20261122500040"
         }
       ],
-      "updatedAt": "2026-11-18",
+      "updatedAt": "2026-11-23",
       "outlook": {},
       "depth": {
         "basis": "2026 정규시즌 마지막 홈경기 선발 라인업 기준 (머니투데이 10/9)",
@@ -1598,6 +1629,30 @@
           "source": "아시아투데이",
           "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261111010004357",
           "impact": 1
+        },
+        {
+          "cat": "trade",
+          "dir": "in",
+          "name": "정철원",
+          "pos": "투수",
+          "detail": "키움과 1:1 트레이드로 영입(11/20, 이택근 단장 첫 트레이드). 2022 신인왕, 통산 270경기 ERA 4.37. 2026 롯데 34경기 3홀드",
+          "status": "확정",
+          "date": "2026-11-20",
+          "source": "마이데일리",
+          "url": "https://www.mydaily.co.kr/page/view/2026112016161249714",
+          "impact": 2
+        },
+        {
+          "cat": "trade",
+          "dir": "out",
+          "name": "임지열",
+          "pos": "외야수",
+          "detail": "키움과 1:1 트레이드로 이적. 2026 팀 주장, 2014 2R",
+          "status": "확정",
+          "date": "2026-11-20",
+          "source": "마이데일리",
+          "url": "https://www.mydaily.co.kr/page/view/2026112016161249714",
+          "impact": 2
         }
       ],
       "roster": {
@@ -1624,9 +1679,18 @@
           "date": "2026-11-18",
           "source": "엑스포츠뉴스 김근한",
           "url": "https://www.xportsnews.com/article/2220534"
+        },
+        {
+          "cat": "foreign",
+          "dir": "stay",
+          "name": "빅터 레이예스 (외야·타자)",
+          "text": "구단은 잔류 의사나 협상 난항, 일본行 설도 있다는 칼럼. 로드리게스·비슬리 거취 미정, 아시아쿼터는 치바롯데 타케다 아이토를 미야자키 캠프에 초청 (구단 발표 아님)",
+          "date": "2026-11-22",
+          "source": "서울신문",
+          "url": "https://seoul.co.kr/news/sport/baseball/2026/11/22/20261122500040"
         }
       ],
-      "updatedAt": "2026-11-18",
+      "updatedAt": "2026-11-23",
       "outlook": {},
       "depth": {
         "basis": "2026 정규시즌 최종전 선발 라인업 기준 (코리아데일리 10/11)",
@@ -2049,6 +2113,18 @@
           "source": "STN스포츠",
           "url": "https://www.stnsports.co.kr/news/articleView.html?idxno=323928",
           "impact": 1
+        },
+        {
+          "cat": "foreign",
+          "dir": "in",
+          "name": "제시 숄튼스",
+          "pos": "투수",
+          "detail": "신규 영입 총액 $87.5만 (계약금 $12.5만 + 연봉 $75만). 1994년생 우완, 최고 154km. 2026 탬파베이 47.2이닝 5승3패 ERA 4.34. 왓슨·왕옌청과 선발진 구성",
+          "status": "확정",
+          "date": "2026-11-22",
+          "source": "SPOTV뉴스",
+          "url": "https://spotvnews.co.kr/news/articleView.html?idxno=1021191",
+          "impact": 3
         }
       ],
       "rumors": [
@@ -2068,7 +2144,8 @@
           "브루스 짐머맨 (투수) · 7월 에르난데스 대체",
           "요나단 페라자 (외야·타자)",
           "왕옌청 (아시아쿼터 투수) · 재계약 확정",
-          "트로이 왓슨 (투수) · 2027 신규 계약"
+          "트로이 왓슨 (투수) · 2027 신규 계약",
+          "제시 숄튼스 (투수) · 2027 신규 계약 $87.5만"
         ],
         "fa": [
           "최재훈",
@@ -2077,10 +2154,11 @@
         "notes": [
           "노시환 11년 307억 비FA 다년계약 (2026-02-23, 뉴시스)",
           "강백호 4년 최대 100억 FA 영입 (2025-11-20, 뉴시스)",
-          "왓슨은 구단 발표(11/11)했지만 메디컬 검진(토미존 수술 이력) 결과 대기 중 (스포티비 11/16)"
+          "왓슨은 구단 발표(11/11)했지만 메디컬 검진(토미존 수술 이력) 결과 대기 중 (스포티비 11/16)",
+          "와이스 복귀 추진했으나 미국 잔류(샌디에이고행) 보도 (SPOTV 11/22)"
         ]
       },
-      "updatedAt": "2026-11-16",
+      "updatedAt": "2026-11-23",
       "outlook": {},
       "depth": {
         "basis": "2026 정규시즌 최종전 선발 라인업 기준 (SPOTV 10/10)",
@@ -2322,20 +2400,92 @@
           "source": "뉴스핌",
           "url": "https://www.newspim.com/news/view/20261111001052",
           "impact": 1
+        },
+        {
+          "cat": "trade",
+          "dir": "in",
+          "name": "임지열",
+          "pos": "외야수",
+          "detail": "롯데와 1:1 트레이드로 영입(11/20). 덕수고 출신, 2014 넥센 2R",
+          "status": "확정",
+          "date": "2026-11-20",
+          "source": "마이데일리",
+          "url": "https://www.mydaily.co.kr/page/view/2026112016161249714",
+          "impact": 2
+        },
+        {
+          "cat": "trade",
+          "dir": "out",
+          "name": "정철원",
+          "pos": "투수",
+          "detail": "롯데와 1:1 트레이드로 이적(11/20)",
+          "status": "확정",
+          "date": "2026-11-20",
+          "source": "마이데일리",
+          "url": "https://www.mydaily.co.kr/page/view/2026112016161249714",
+          "impact": 2
+        },
+        {
+          "cat": "foreign",
+          "dir": "stay",
+          "name": "맷 데이비슨",
+          "pos": "내야·타자",
+          "detail": "2027 재계약 총액 $110만",
+          "status": "확정",
+          "date": "2026-11-19",
+          "source": "이투데이",
+          "url": "https://www.etoday.co.kr/news/view/2650219",
+          "impact": 3
+        },
+        {
+          "cat": "foreign",
+          "dir": "stay",
+          "name": "케스턴 히우라",
+          "pos": "내야·타자",
+          "detail": "2027 재계약 총액 $80만",
+          "status": "확정",
+          "date": "2026-11-19",
+          "source": "이투데이",
+          "url": "https://www.etoday.co.kr/news/view/2650219",
+          "impact": 2
+        },
+        {
+          "cat": "foreign",
+          "dir": "in",
+          "name": "후쿠타니 코지",
+          "pos": "투수",
+          "detail": "아시아쿼터 신규 영입, 연봉 $20만. NPB 통산 304경기 38세이브 57홀드 ERA 4.04, 2026 니혼햄 12경기",
+          "status": "확정",
+          "date": "2026-11-19",
+          "source": "이투데이",
+          "url": "https://www.etoday.co.kr/news/view/2650219",
+          "impact": 2
+        },
+        {
+          "cat": "foreign",
+          "dir": "out",
+          "name": "가나쿠보 유토",
+          "pos": "투수",
+          "detail": "아시아쿼터 결별(후쿠타니로 교체)",
+          "status": "확정",
+          "date": "2026-11-19",
+          "source": "이투데이",
+          "url": "https://www.etoday.co.kr/news/view/2650219",
+          "impact": 1
         }
       ],
       "roster": {
         "foreign": [
-          "라울 알칸타라 (투수) · 재계약 합의",
-          "케스턴 히우라 (내야·타자) · 5월 합류",
-          "가나쿠보 유토 (아시아쿼터 투수)",
-          "나머지 1명 확인 중"
+          "라울 알칸타라 (투수) · 재계약",
+          "맷 데이비슨 (내야·타자) · 재계약 $110만",
+          "케스턴 히우라 (내야·타자) · 재계약 $80만",
+          "후쿠타니 코지 (아시아쿼터 투수) · 신규 $20만"
         ],
         "fa": [],
         "notes": []
       },
       "rumors": [],
-      "updatedAt": "2026-11-11",
+      "updatedAt": "2026-11-23",
       "outlook": {},
       "depth": {
         "basis": "2026년 6월 12일 한화전 선발 라인업 기준 (마이데일리, 시즌 중반)",
@@ -2627,10 +2777,12 @@
         "team": "ssg",
         "pos": "투수",
         "kind": "비FA 다년계약 종료",
-        "source": "KBO 승인 공시(이투데이 11/16)",
-        "url": "https://www.etoday.co.kr/news/view/2648616",
+        "source": "이투데이 (11/23)",
+        "url": "https://www.etoday.co.kr/news/view/2651390",
         "grade": "C",
-        "status": "FA 승인"
+        "status": "잔류",
+        "newTeam": "ssg",
+        "contract": "2+1년 최대 15억 (계약금 5억·연봉 7.5억·옵션 2.5억)"
       },
       {
         "name": "서진용",
@@ -2736,6 +2888,21 @@
       "date": "2026-11-18",
       "label": "FA 계약 2호 이후",
       "note": "SSG 최지훈 4년 67억 재계약 (SPOTV 11/18)"
+    },
+    {
+      "date": "2026-11-20",
+      "label": "구자욱 MLB 신분조회",
+      "note": "MLB 사무국 요청에 KBO가 모든 구단과 계약 가능 통보 (SPOTV)"
+    },
+    {
+      "date": "2026-11-22",
+      "label": "FA 4호 계약",
+      "note": "SSG 문승원 2+1년 15억. 한화 숄튼스 영입 (외인 투수진 완성)"
+    },
+    {
+      "date": "2026-11-25",
+      "label": "외국인 재계약 의사 통지 마감",
+      "note": "보류선수 명단 제출 마감과 같은 날 (서울신문 11/22). 명단 공개는 30일"
     }
   ]
 }
