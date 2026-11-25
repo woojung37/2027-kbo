@@ -505,6 +505,18 @@
           "source": "톱스타뉴스",
           "url": "https://www.topstarnews.net/news/articleView.html?idxno=16271968",
           "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "out",
+          "name": "홍세완 코치",
+          "pos": "2군 타격코치",
+          "detail": "SSG행 보도, 이숭용 감독이 이범호 감독에게 직접 양해를 구함. 구단 공식 발표 전",
+          "status": "유력",
+          "date": "2026-11-19",
+          "source": "SPOTV NEWS",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1020665",
+          "impact": 1
         }
       ],
       "roster": {
@@ -553,7 +565,7 @@
           "url": "https://www.xportsnews.com/article/2220517"
         }
       ],
-      "updatedAt": "2026-11-18",
+      "updatedAt": "2026-11-25",
       "outlook": {},
       "depth": {
         "basis": "2026 PO 2차전 선발 라인업 기준 (마이데일리 10/27)",
@@ -1363,6 +1375,18 @@
           "source": "이투데이",
           "url": "https://www.etoday.co.kr/news/view/2651390",
           "impact": 2
+        },
+        {
+          "cat": "coach",
+          "dir": "in",
+          "name": "홍세완 코치",
+          "pos": "1군 타격코치(예상)",
+          "detail": "KIA 2군 타격코치 출신(2024~25 KIA 1군 타격코치). 기사는 영입 확정이라 서술하나 구단 공식 발표는 아직 없고 보직은 '예상'",
+          "status": "유력",
+          "date": "2026-11-19",
+          "source": "SPOTV NEWS",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1020665",
+          "impact": 2
         }
       ],
       "roster": {
@@ -1402,9 +1426,18 @@
           "date": "2026-11-22",
           "source": "서울신문·시대일보",
           "url": "https://seoul.co.kr/news/sport/baseball/2026/11/22/20261122500040"
+        },
+        {
+          "cat": "coach",
+          "dir": "stay",
+          "name": "임훈 코치",
+          "text": "2군으로 내려갈 예정, 타격 보조코치도 바뀔 전망 (같은 기사의 코칭스태프 소폭 개편 보도)",
+          "date": "2026-11-19",
+          "source": "SPOTV NEWS",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1020665"
         }
       ],
-      "updatedAt": "2026-11-23",
+      "updatedAt": "2026-11-25",
       "outlook": {},
       "depth": {
         "basis": "2026 정규시즌 마지막 홈경기 선발 라인업 기준 (머니투데이 10/9)",
