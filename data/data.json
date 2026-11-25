@@ -754,6 +754,18 @@
           "source": "뉴스핌 (LG 관계자 확인)",
           "url": "https://www.newspim.com/news/view/20261114000086",
           "impact": 1
+        },
+        {
+          "cat": "foreign",
+          "dir": "stay",
+          "name": "존 케네디",
+          "pos": "투수(좌완)",
+          "detail": "아시아쿼터 재계약 합의, 총액 $20만 (계약금 $5만 + 연봉 $10만 + 인센티브 $5만). 2026 8월 합류 23경기 3.80 10홀드, 좌타 피안타율 .135",
+          "status": "확정",
+          "date": "2026-11-25",
+          "source": "스포츠경향",
+          "url": "https://sports.khan.co.kr/article/202611251011003/",
+          "impact": 2
         }
       ],
       "roster": {
@@ -762,7 +774,8 @@
           "카를로스 카라스코 (투수) · 치리노스 대체, 시즌 중 합류",
           "오스틴 딘 (1루수·타자)",
           "라클란 웰스 (아시아쿼터 투수)",
-          "트리스탄 벡 (투수) · 2027 신규 계약"
+          "트리스탄 벡 (투수) · 2027 신규 계약",
+          "존 케네디 (아시아쿼터 투수) · 재계약 합의 $20만"
         ],
         "fa": [
           "박동원 (주전 포수, 잔류가 최우선 과제)",
@@ -793,7 +806,7 @@
           "url": "https://spotvnews.co.kr/news/articleView.html?idxno=1020938"
         }
       ],
-      "updatedAt": "2026-11-23",
+      "updatedAt": "2026-11-25",
       "outlook": {},
       "depth": {
         "basis": "2026 와일드카드 1차전 선발 라인업 기준 (머니투데이 WC1 라인업(10/14))",
@@ -963,6 +976,54 @@
           "source": "SPOTV뉴스",
           "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1021487",
           "impact": 3
+        },
+        {
+          "cat": "coach",
+          "dir": "in",
+          "name": "조성환 퓨처스 감독",
+          "pos": "퓨처스 감독",
+          "detail": "전 KBSN SPORTS 해설위원, 2025 두산 감독대행·QC코치, APBC 대표팀 수석 겸 수비코치. 구단 공식 발표",
+          "status": "확정",
+          "date": "2026-11-25",
+          "source": "스타뉴스",
+          "url": "https://www.starnewskorea.com/sports/2026/11/25/2026112509561622156",
+          "impact": 2
+        },
+        {
+          "cat": "coach",
+          "dir": "in",
+          "name": "박정권 퓨처스 타격코치",
+          "pos": "퓨처스 타격코치",
+          "detail": "전 SSG 2군 감독(2025~26). 구단 공식 발표",
+          "status": "확정",
+          "date": "2026-11-25",
+          "source": "스타뉴스",
+          "url": "https://www.starnewskorea.com/sports/2026/11/25/2026112509561622156",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "out",
+          "name": "니무라 도오루 퓨처스 감독",
+          "pos": "퓨처스 감독",
+          "detail": "재계약하지 않기로 결정 (2년 지휘)",
+          "status": "확정",
+          "date": "2026-11-25",
+          "source": "스타뉴스",
+          "url": "https://www.starnewskorea.com/sports/2026/11/25/2026112509561622156",
+          "impact": 1
+        },
+        {
+          "cat": "coach",
+          "dir": "out",
+          "name": "오노 카즈요시 투수코치",
+          "pos": "투수코치",
+          "detail": "재계약하지 않기로 결정",
+          "status": "확정",
+          "date": "2026-11-25",
+          "source": "스타뉴스",
+          "url": "https://www.starnewskorea.com/sports/2026/11/25/2026112509561622156",
+          "impact": 1
         }
       ],
       "roster": {
@@ -993,7 +1054,7 @@
           "url": "https://www.xportsnews.com/article/2220429"
         }
       ],
-      "updatedAt": "2026-11-24",
+      "updatedAt": "2026-11-25",
       "outlook": {},
       "depth": {
         "basis": "2026 와일드카드 1차전 선발 라인업 기준 (머니투데이 WC1 라인업(10/14))",
