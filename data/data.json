@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-25",
+  "lastUpdated": "2026-11-27",
   "teams": {
     "kt": {
       "season2026": "2026 정규시즌 1위 (90승 5무 49패) · 한국시리즈 삼성에 1승 4패 준우승",
@@ -778,6 +778,18 @@
           "source": "스포츠경향",
           "url": "https://sports.khan.co.kr/article/202611251011003/",
           "impact": 2
+        },
+        {
+          "cat": "trade",
+          "dir": "in",
+          "name": "김민식",
+          "pos": "포수",
+          "detail": "SSG 방출(11/12) 후 LG 영입, 구단 공식 발표(11/26). 37세, 통산 880경기 .225, 2026 1군 14경기. 계약 조건은 미공개. 포수진 뎁스 강화",
+          "status": "확정",
+          "date": "2026-11-26",
+          "source": "뉴스핌",
+          "url": "https://www.newspim.com/news/view/20261126000411",
+          "impact": 1
         }
       ],
       "roster": {
@@ -800,15 +812,6 @@
       },
       "rumors": [
         {
-          "cat": "trade",
-          "dir": "in",
-          "name": "김민식 (포수)",
-          "text": "SSG 방출 후 LG행 초읽기, 계약 마무리 단계라는 보도 (제목만 확인, 본문 미확인)",
-          "date": "2026-11-16",
-          "source": "문화일보",
-          "url": "https://www.munhwa.com/article/11631439"
-        },
-        {
           "cat": "fa",
           "dir": "stay",
           "name": "박동원·홍창기 (LG FA)",
@@ -818,7 +821,7 @@
           "url": "https://spotvnews.co.kr/news/articleView.html?idxno=1020938"
         }
       ],
-      "updatedAt": "2026-11-25",
+      "updatedAt": "2026-11-26",
       "outlook": {},
       "depth": {
         "basis": "2026 와일드카드 1차전 선발 라인업 기준 (머니투데이 WC1 라인업(10/14))",
